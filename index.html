@@ -13,42 +13,61 @@
 <body>
     <nav class="navbar">
         <div class="navbar_social">
-            <a class="navbar_social_icon" href="#">
-                <svg class="navbar_social_svg">
-                    <use xlink:href="img/sprite#icon-facebook"></use>
-                </svg>
-            </a>
-
-            <a class="navbar_social_icon" href="#">
-                <svg class="navbar_social_svg">
-                    <use xlink:href="img/sprite#icon-twitter"></use>
-                </svg>
-            </a>
-            <a class="navbar_social--link" href="#">English</a>
-            <a class="navbar_social--link" href="#">my page</a>
-            <a class="navbar_social--link" href="#">layout</a>
+            <div class="navbar_social_container">
+                <a class="navbar_social_icon" href="#">
+                    <svg class="navbar_social_svg">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a class="navbar_social_icon" href="#">
+                    <svg class="navbar_social_svg">
+                        <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+                <a class="navbar_social--link" href="#">English</a>
+                <a class="navbar_social--link" href="#">my page</a>
+                <a class="navbar_social--link" href="#">layout</a>
+            </div>
         </div>
         <div class="navbar_nav">
-            <div class="navbar_nav_logo">
-                <a class="navbar_nav_logo_svg" href="#">
-                    <svg class="navbar_social_svg">
-                        <use xlink:href="img/sprite#icon-vitaldance"></use>
-                    </svg>
-                    vitaldance
-                </a>
+            <div class="navbar_nav_container">
+                <div class="navbar_nav_logo">
+                    <a class="navbar_nav_logo_a" href="#">
+                        <svg class="navbar_nav_svg">
+                            <use xlink:href="img/sprite.svg#icon-vitaldance"></use>
+                        </svg>
+                        vitaldance
+                    </a>
+                </div>
+                <ul class="navbar_nav_ul">
+                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">about</a></li>
+                    <li class="navbar_nav_li"><a class="navbar_nav_a" href="#">program</a></li>
+                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">sponsors</a></li>
+                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">news</a></li>
+                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">Something</a></li>
+
+                </ul>
             </div>
-            <ul class="navbar_nav_ul">
-                <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">about</a></li>
-                <li class="navbar_nav_li"><a class="navbar_nav_a" href="#">program</a></li>
-                <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">sponsors</a></li>
-                <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">news</a></li>
-            </ul>
         </div>
     </nav>
     <header class="header">
-        <h3>Ready for dance</h3>
-        <h1>We have been training the whole 2019 year to perform this day</h1>
+        <div class="header_bg"></div>
+        <div class="header_container">
+            <h3 class="header_smallheading">Ready for dance</h3>
+            <h1 class="header_bigheading">We have been training the whole 2019 year to perform this day</h1>
+        </div>
     </header>
+    <section class="program">
+        <div class="program_container">
+            <h3 class="program_heading">the program
+            </h3>
+        </div>
+    </section>
+    <section class="featured-dances">
+
+    </section>
+    <section class="partners"></section>
+    <footer class="footer"></footer>
 </body>
 
 </html>

@@ -7,45 +7,102 @@
     //////////////Social navbar top///////////
     &_social {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+        align-items: center;
         background-color: var(--dark);
 
-        &_icon {
-            fill: white;
+        &_container {
+            width: 120rem;
+            display: flex;
+            justify-content: flex-end;
 
-            display: inline-block;
-            width: 2rem;
-            height: 10rem;
+            &>* {
+                margin-right: 1rem;
+            }
+
+        }
+
+        &_icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         &_svg {
-            width: 2rem;
-            height: 2rem;
             fill: white;
-
+            width: 1.5rem;
+            height: 1.5rem;
         }
+
+
 
         &--link {
             color: white;
             padding: .5rem;
             text-decoration: none;
+            text-transform: capitalize;
         }
     }
+
+
 
     /////////Navbar bottom////////
 
     &_nav {
+
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: orangered;
+        height: 7rem;
+        justify-content: center;
+
+        &_container {
+            flex: 0 1 120rem;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        &_logo {
+            margin-left: 1rem;
+            ;
+            flex: 0 1 10%;
+
+            &_a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: coco;
+                color: var(--dark);
+                line-height: 1.4;
+
+            }
+        }
+
+        &_svg {
+            width: 5rem;
+            height: 5rem;
+            fill: var(--orange);
+
+        }
 
         &_ul {
+            flex: 0 1 50%;
+            align-self: center;
             display: flex;
+            justify-content: space-evenly;
         }
 
         &_li {
             list-style: none;
+        }
+
+        &_a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--dark);
+
         }
     }
 
