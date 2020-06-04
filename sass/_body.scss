@@ -39,8 +39,11 @@ body {
     color: var(--dark);
 }
 
-///Modifiers
+////////Modifiers
+
+
 .h-3{
+    align-self: center;
     text-transform: capitalize;
     font-size: 2rem;
     margin: 2rem 0;
@@ -52,7 +55,40 @@ body {
 .gray-text{
    color:var(--dark-light); 
 }
-
+.orange-text{
+    color: var(--orange);
+}
 .gray-bg{
     background-color: var(--dark-light);
 }
+
+.border{
+    position: relative;
+}
+
+.border::after{
+        content: '';
+        width: 30%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: -.5rem;
+        border-width: 0 0 1px;
+        border-style: solid;
+        border-color: var(--orange);
+    }
+.brd_left{
+    position: relative;
+}
+
+.brd_left::after{
+        content: '';
+        width: 20%;
+        position: absolute;
+        left: 0;
+        transform: translate(-50%, -50%);
+        bottom: -.5rem;
+        border-width: 0 0 1px;
+        border-style: solid;
+        border-color: var(--orange);
+    }

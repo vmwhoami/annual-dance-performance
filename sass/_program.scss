@@ -28,6 +28,25 @@
         background-color: #ffffff11;
         box-shadow: 0 4rem 4rem #00000022;
         margin: 1rem;
+
+
+      &_link{
+          align-self: center;
+          flex: 0 0 auto;
+          text-decoration: none;
+          margin: 2rem 0;
+          text-transform: uppercase;
+          position: relative;
+        &::after{
+            content: '';
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: -.5rem;
+            border-width: 0 0 1px;
+            border-style: solid;
+        }
+      }
     }
     &_svg{
         width: 10rem;

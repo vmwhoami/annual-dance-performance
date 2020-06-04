@@ -1,8 +1,10 @@
 .navbar {
+    position: fixed;
+    background-color: #fff;
     width: 100%;
     display: flex;
     flex-flow: column;
-
+z-index: 100;
 
     //////////////Social navbar top///////////
     &_social {
