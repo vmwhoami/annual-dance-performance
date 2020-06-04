@@ -20,13 +20,14 @@
 
     &_box_container {
         display: flex;
+        flex-flow:row wrap;
     }
 
     &_box {
         flex: 1 1 auto;
         background-color: #ffffff11;
         box-shadow: 0 4rem 4rem #00000022;
-        margin: 1rem;
+        margin: 1remç;
     }
     &_svg{
         width: 10rem;

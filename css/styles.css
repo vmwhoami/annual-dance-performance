@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   src: url(fonts/Cocogoose.ttf);
   font-family: "coco";
@@ -186,12 +187,13 @@ body {
 }
 .program_box_container {
   display: flex;
+  flex-flow: row wrap;
 }
 .program_box {
   flex: 1 1 auto;
   background-color: #ffffff11;
   box-shadow: 0 4rem 4rem #00000022;
-  margin: 1rem;
+  margin: 1remç;
 }
 .program_svg {
   width: 10rem;
