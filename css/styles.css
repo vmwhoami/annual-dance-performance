@@ -116,7 +116,7 @@ body {
 }
 
 .header {
-  height: 100vh;
+  min-height: 70rem;
   width: 100%;
   position: relative;
 }
@@ -160,6 +160,9 @@ body {
   background-color: rgba(255, 255, 255, 0.932);
   color: black;
   mix-blend-mode: screen;
+  font-family: coco;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .program {
