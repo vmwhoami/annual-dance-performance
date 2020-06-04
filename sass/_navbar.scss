@@ -9,7 +9,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: var(--dark-light);
+        // background-color: var(--dark-light);
 
         &_container {
             width: 120rem;
@@ -63,7 +63,6 @@
 
         &_logo {
             margin-left: 1rem;
-            ;
             flex: 0 1 10%;
 
             &_a {
@@ -73,7 +72,6 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 font-family: coco;
-                color: var(--dark);
                 line-height: 1.4;
 
             }

@@ -1,5 +1,10 @@
 .partners {
     width: 100%;
     height: 40vh;
-    background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &_container{
+      flex:1 1 120rem;
+  }
 }

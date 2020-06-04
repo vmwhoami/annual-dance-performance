@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   src: url(fonts/Cocogoose.ttf);
   font-family: "coco";
@@ -35,6 +34,24 @@ body {
   color: var(--dark);
 }
 
+.h-3 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.white-text {
+  color: white;
+}
+
+.gray-text {
+  color: var(--dark-light);
+}
+
+.gray-bg {
+  background-color: var(--dark-light);
+}
+
 .navbar {
   width: 100%;
   display: flex;
@@ -44,7 +61,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--dark-light);
 }
 .navbar_social_container {
   width: 120rem;
@@ -91,7 +107,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-family: coco;
-  color: var(--dark);
   line-height: 1.4;
 }
 .navbar_nav_svg {
@@ -190,10 +205,10 @@ body {
   flex-flow: row wrap;
 }
 .program_box {
-  flex: 1 1 auto;
+  flex: 1 1 25rem;
   background-color: #ffffff11;
   box-shadow: 0 4rem 4rem #00000022;
-  margin: 1remç;
+  margin: 1rem;
 }
 .program_svg {
   width: 10rem;
@@ -211,16 +226,25 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
 }
 .featured-dances_grid {
   flex: 0 1 120rem;
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
 }
 
 .partners {
   width: 100%;
   height: 40vh;
-  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partners_container {
+  flex: 1 1 120rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

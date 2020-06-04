@@ -24,10 +24,10 @@
     }
 
     &_box {
-        flex: 1 1 auto;
+        flex: 1 1 25rem;
         background-color: #ffffff11;
         box-shadow: 0 4rem 4rem #00000022;
-        margin: 1remç;
+        margin: 1rem;
     }
     &_svg{
         width: 10rem;
@@ -39,5 +39,6 @@
     &_text{
         color: white;
         padding: 1rem;
+       
     }
 }
