@@ -1,0 +1,54 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+
+
+    //////////////Social navbar top///////////
+    &_social {
+        display: flex;
+        justify-content: flex-end;
+        background-color: var(--dark);
+
+        &_icon {
+            fill: white;
+
+            display: inline-block;
+            width: 2rem;
+            height: 10rem;
+        }
+
+        &_svg {
+            width: 2rem;
+            height: 2rem;
+            fill: white;
+
+        }
+
+        &--link {
+            color: white;
+            padding: .5rem;
+            text-decoration: none;
+        }
+    }
+
+    /////////Navbar bottom////////
+
+    &_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: orangered;
+
+        &_ul {
+            display: flex;
+        }
+
+        &_li {
+            list-style: none;
+        }
+    }
+
+
+
+}

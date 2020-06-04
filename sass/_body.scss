@@ -8,6 +8,7 @@
     padding: 0;
 }
 
+//Variables
 :root {
     --dark: #272A31;
     --orange: #EC5242;
@@ -30,4 +31,5 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     line-height: 1.6;
+    color: var(--dark);
 }

@@ -29,6 +29,46 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
+  color: var(--dark);
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.navbar_social {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--dark);
+}
+.navbar_social_icon {
+  fill: white;
+  display: inline-block;
+  width: 2rem;
+  height: 10rem;
+}
+.navbar_social_svg {
+  width: 2rem;
+  height: 2rem;
+  fill: white;
+}
+.navbar_social--link {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.navbar_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orangered;
+}
+.navbar_nav_ul {
+  display: flex;
+}
+.navbar_nav_li {
+  list-style: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
