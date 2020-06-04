@@ -9,6 +9,49 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: red;
+        overflow: hidden;
+
+
+
+        &_video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+            z-index: -1;
+        }
+    }
+
+    &_container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255,
+                255,
+                255,
+                0.322);
+    }
+
+    &_top {
+        flex: 0 1 120rem
+    }
+
+    &_smallheading {
+        font-size: 4rem;
+        font-weight: 300;
+    }
+
+    &_bigheading {
+        font-size: 4rem;
+        display: inline-block;
+        max-width: 50%;
+        background-color: white;
+        color: black;
+        mix-blend-mode: screen;
+
     }
 }

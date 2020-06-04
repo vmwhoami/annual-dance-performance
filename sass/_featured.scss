@@ -1,0 +1,11 @@
+.featured-dances {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+    &_grid {
+        flex: 0 1 120rem
+    }
+}

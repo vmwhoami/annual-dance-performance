@@ -9,7 +9,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: var(--dark);
+        background-color: var(--dark-light);
 
         &_container {
             width: 120rem;
@@ -90,11 +90,13 @@
             flex: 0 1 50%;
             align-self: center;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: flex-end;
         }
+
 
         &_li {
             list-style: none;
+            margin-right: 1rem;
         }
 
         &_a {
