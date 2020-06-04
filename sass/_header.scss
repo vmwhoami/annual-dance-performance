@@ -39,15 +39,17 @@
     }
 
     &_smallheading {
-        font-size: 4rem;
+        font-size: 4.3rem;
         font-weight: 300;
+        color: var(--orange);
+
     }
 
     &_bigheading {
         padding: 2rem;
-        font-size: 4rem;
+        font-size: 4.5rem;
         display: inline-block;
-        max-width: 50%;
+        max-width: 80%;
         background-color: rgba(255, 255, 255, 0.932);
         color: black;
         mix-blend-mode: screen;
