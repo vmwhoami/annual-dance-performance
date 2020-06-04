@@ -1,0 +1,33 @@
+@font-face {
+    src: url(fonts/Cocogoose.ttf);
+    font-family: "coco";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark: #272A31;
+    --orange: #EC5242;
+    --light-gray: #D3D3D3;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
