@@ -196,4 +196,10 @@ body {
   flex: 0 1 120rem;
 }
 
+.partners {
+  width: 100%;
+  height: 40vh;
+  background-color: gray;
+}
+
 /*# sourceMappingURL=styles.css.map */
