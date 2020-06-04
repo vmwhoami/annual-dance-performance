@@ -28,6 +28,12 @@
         background-color: #ffffff11;
         box-shadow: 0 4rem 4rem #00000022;
         margin: 1rem;
+        transition: all .3s;
+
+        &:hover{
+            transform: scale(1.1);
+            border: 2px solid #ffffffd8;
+        }
 
 
       &_link{

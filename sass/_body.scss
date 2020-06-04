@@ -79,13 +79,14 @@ body {
     }
 .brd_left{
     position: relative;
+    display: inline-block;
 }
 
 .brd_left::after{
         content: '';
-        width: 20%;
+        width: 4rem;
         position: absolute;
-        left: 0;
+        left: 2rem;
         transform: translate(-50%, -50%);
         bottom: -.5rem;
         border-width: 0 0 1px;

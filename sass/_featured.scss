@@ -16,9 +16,12 @@
         display: flex;
     }
     &_imgcont{
-        
+        flex:0 1 30%;
     }
     &_img{
         width: 100%;
+    }
+    &_about{
+        padding: 0 1rem;
     }
 }

@@ -2,7 +2,8 @@
     width: 100%;
     height: auto;
     display: flex;
-  justify-content: center;
+    justify-content: center;
+    align-items: center;
     &_container{
         flex:1 1 120rem;
         display: flex;
@@ -10,11 +11,24 @@
 
     &_left{
         flex:0 1 50%;
-       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       &_link{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
     }
 
     &_right{
         flex:0 1 50%;
+        display: flex;
        
+    }
+
+    &_logo{
+        fill: var( --dark-light);
+        width: 10rem;
     }
 }

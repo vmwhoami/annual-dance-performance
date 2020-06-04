@@ -75,13 +75,14 @@ body {
 
 .brd_left {
   position: relative;
+  display: inline-block;
 }
 
 .brd_left::after {
   content: "";
-  width: 20%;
+  width: 4rem;
   position: absolute;
-  left: 0;
+  left: 2rem;
   transform: translate(-50%, -50%);
   bottom: -0.5rem;
   border-width: 0 0 1px;
@@ -95,6 +96,7 @@ body {
   width: 100%;
   display: flex;
   flex-flow: column;
+  box-shadow: 0 0.5rem 0.5rem #00000022;
   z-index: 100;
 }
 .navbar_social {
@@ -138,11 +140,12 @@ body {
 }
 .navbar_nav_logo {
   margin-left: 1rem;
-  flex: 0 1 10%;
+  flex: 0 1 auto;
 }
 .navbar_nav_logo_a {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -172,6 +175,7 @@ body {
 }
 
 .header {
+  top: 10rem;
   min-height: 70rem;
   width: 100%;
   position: relative;
@@ -195,11 +199,13 @@ body {
   z-index: -1;
 }
 .header_container {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.6);
 }
 .header_top {
   flex: 0 1 120rem;
@@ -250,6 +256,11 @@ body {
   background-color: #ffffff11;
   box-shadow: 0 4rem 4rem #00000022;
   margin: 1rem;
+  transition: all 0.3s;
+}
+.program_box:hover {
+  transform: scale(1.1);
+  border: 2px solid #ffffffd8;
 }
 .program_box_link {
   align-self: center;
@@ -298,8 +309,14 @@ body {
   flex: 0 1 50%;
   display: flex;
 }
+.featured-dances_imgcont {
+  flex: 0 1 30%;
+}
 .featured-dances_img {
   width: 100%;
+}
+.featured-dances_about {
+  padding: 0 1rem;
 }
 
 .partners {
@@ -326,6 +343,7 @@ body {
   height: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .footer_container {
   flex: 1 1 120rem;
@@ -333,9 +351,22 @@ body {
 }
 .footer_left {
   flex: 0 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_left_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer_right {
   flex: 0 1 50%;
+  display: flex;
+}
+.footer_logo {
+  fill: var(--dark-light);
+  width: 10rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
