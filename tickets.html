@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -9,13 +9,29 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
+
 <body>
 
+    <!-- Nav ///////// section ////////// for mobile  -->
+    <div class="navigation logo">
+        <input type="checkbox" name="nav" id="nav" class="navigation-checkbox">
+        <label for="nav" class="navigation-handle">
+            <span class="navigation-icon">&nbsp;</span>
+        </label>
+        <div class="navigation-background">&nbsp;</div>
+        <div class="navigation-nav">
+            <ul class="navigation-list">
+                <li class="navigation-item"><a href="about.html" class="navigation-link uppercase"> About </a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link uppercase"> program</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link uppercase"> sponsors</a></li>
+                <li class="navigation-item"><a href="tickets.html" class="navigation-link uppercase">tickets</a></li>
 
-    <!-- navbar mobile version -->
+            </ul>
+        </div>
+    </div>
+    <!-- Nav /////////////////////// section /////////////////// for desctop  -->
 
-
-    <nav class="navbar gray-bg">
+    <nav class="navbar">
         <div class="navbar_social gray-bg">
             <div class="navbar_social_container">
                 <a class="navbar_social_icon" href="#">
@@ -33,7 +49,7 @@
                 <a class="navbar_social--link gray-text" href="#">layout</a>
             </div>
         </div>
-        <!-- bottom  ////////////  navbar  -->
+        <!-- bottom  //////////////////  navbar  -->
         <div class="navbar_nav">
             <div class="navbar_nav_container">
                 <div class="navbar_nav_logo">
@@ -45,16 +61,20 @@
                     </a>
                 </div>
                 <ul class="navbar_nav_ul">
-                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">about</a></li>
+                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="about.html">about</a></li>
                     <li class="navbar_nav_li"><a class="navbar_nav_a" href="#">program</a></li>
                     <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">sponsors</a></li>
-                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">news</a></li>
-                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">Tickets</a></li>
+                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="tickets.html">tickets</a></li>
+
+
 
                 </ul>
             </div>
         </div>
     </nav>
+
+
+
     <!-- buy tickets completion form  -->
 
 
@@ -71,7 +91,7 @@
                 <input class="tickets_inpfield" type="number" name="ticketnr" id="ticketnr"
                     placeholder="Number of tickets">
             </div>
-
+            <h3 class="h-3 border gray-text coco">Choose your sitting</h3>
             <div class="tickets_radios">
                 <div class="tichets_rows">
                     <label class=" uppercase gray-text border mx-1  " for="front">

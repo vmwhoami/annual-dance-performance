@@ -10,9 +10,6 @@
 
 //Variables
 
-
-
-
 :root {
     --dark: #272A31;
     --dark-light: #3e3e3e;
@@ -21,6 +18,7 @@
     --light-gray: #D3D3D3;
 }
 
+//Sass Variables
 
 *,
 *::before,
@@ -32,6 +30,10 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+    @media screen and (max-width:48em) {
+        font-size: 55%;
+    }
 }
 
 body {
@@ -39,6 +41,14 @@ body {
     font-size: 1.6rem;
     line-height: 1.6;
     color: var(--dark);
+}
+
+.container {
+    margin-top: 10rem;
+
+    @media screen and (max-width:48em) {
+        margin-top: 0;
+    }
 }
 
 ////////Modifiers

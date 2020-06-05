@@ -1,15 +1,18 @@
 .program {
     width: 100%;
-    height: auto;
+    min-height: 50vh;
     background-color: var(--dark-site);
     display: flex;
     justify-content: center;
+    z-index: 10;
 
     &_container {
         flex: 0 1 120rem;
+
         text-align: center;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     &_heading {
@@ -20,50 +23,60 @@
 
     &_box_container {
         display: flex;
-        flex-flow:row wrap;
+        flex-flow: row;
+
+        @media screen and (max-width:48em) {
+            flex-direction: column;
+        }
     }
 
     &_box {
         flex: 1 1 25rem;
         background-color: #ffffff11;
-        box-shadow: 0 4rem 4rem #00000022;
+
+        border: 2px solid #ffffffd8;
+
         margin: 1rem;
         transition: all .3s;
 
-        &:hover{
-            transform: scale(1.1);
-            border: 2px solid #ffffffd8;
+        &:hover {
+            background-color: #ffffff36;
+            box-shadow: 0 .5rem 2rem #fcfcfc22;
         }
 
 
-      &_link{
-          align-self: center;
-          flex: 0 0 auto;
-          text-decoration: none;
-          margin: 2rem 0;
-          text-transform: uppercase;
-          position: relative;
-        &::after{
-            content: '';
-            width: 100%;
-            position: absolute;
-            left: 0;
-            bottom: -.5rem;
-            border-width: 0 0 1px;
-            border-style: solid;
+        &_link {
+            align-self: center;
+            flex: 0 0 auto;
+            text-decoration: none;
+            margin: 2rem 0;
+            text-transform: uppercase;
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: -.5rem;
+                border-width: 0 0 1px;
+                border-style: solid;
+            }
         }
-      }
     }
-    &_svg{
+
+    &_svg {
         width: 10rem;
         fill: white;
     }
-    &_heading{
+
+    &_heading {
         color: var(--orange);
     }
-    &_text{
+
+    &_text {
         color: white;
         padding: 1rem;
-       
+
     }
 }

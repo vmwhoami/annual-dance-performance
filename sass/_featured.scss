@@ -11,6 +11,10 @@
         flex: 0 1 auto;
         display: flex;
         flex-flow: row wrap;
+
+        @media screen and (max-width:48em) {
+            flex-direction: column;
+        }
     }
 
     &_dance {
@@ -34,5 +38,9 @@
         display: flex;
         flex-direction: column;
         margin: 0 2rem;
+
+        @media screen and (max-width:48em) {
+            margin: 0 .5rem;
+        }
     }
 }

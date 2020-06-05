@@ -9,7 +9,10 @@
     &_container {
         flex: 1 1 120rem;
         display: flex;
-        flex-wrap: wrap;
+
+        @media screen and (max-width:48em) {
+            flex-direction: column;
+        }
     }
 
     &_left {
