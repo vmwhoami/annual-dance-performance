@@ -54,6 +54,10 @@ body {
   margin: 1rem 0;
 }
 
+.mx-1 {
+  margin: 0 1rem;
+}
+
 .italic {
   font-style: italic;
 }
@@ -67,6 +71,14 @@ body {
 
 .white-text {
   color: white;
+}
+
+.fill-white {
+  fill: white;
+}
+
+.fill-gray {
+  fill: var(--dark-light);
 }
 
 .gray-text {
@@ -483,6 +495,72 @@ body {
   margin: 1rem 0;
 }
 
+.tickets {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tickets::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/concert_hall.jpg);
+  background-position: 50%;
+  background-size: cover;
+  filter: grayscale(1);
+  z-index: -1;
+}
+.tickets_form {
+  flex: 0 1 60rem;
+  background-color: #ffffffe5;
+  border: 1rem solid #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.tickets_inputs {
+  width: 80%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.tickets_inpfield {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.tickets_radios {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+.tickets_rows {
+  display: flex;
+  align-items: center;
+}
+.tickets_button {
+  align-self: center;
+  backface-visibility: hidden;
+  width: 50%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--orange);
+  color: white;
+  transition: all 0.3s;
+}
+.tickets_button:hover {
+  background-color: var(--orange);
+  transform: scale(1.1);
+}
+
 .footer {
   width: 100%;
   height: auto;
@@ -519,7 +597,6 @@ body {
   display: flex;
 }
 .footer_logo {
-  fill: var(--dark-light);
   width: 10rem;
 }
 .footer_right {

@@ -11,6 +11,8 @@
 //Variables
 
 
+
+
 :root {
     --dark: #272A31;
     --dark-light: #3e3e3e;
@@ -61,6 +63,10 @@ body {
     margin: 1rem 0;
 }
 
+.mx-1 {
+    margin: 0 1rem;
+}
+
 .italic {
     font-style: italic;
 }
@@ -74,6 +80,14 @@ body {
 
 .white-text {
     color: white;
+}
+
+.fill-white {
+    fill: white;
+}
+
+.fill-gray {
+    fill: var(--dark-light);
 }
 
 .gray-text {
