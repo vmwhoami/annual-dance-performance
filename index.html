@@ -12,6 +12,23 @@
 
 <body>
 
+    <!-- nav --------------- section ------------------------- for mobile  -->
+    <div class="navigation logo">
+        <input type="checkbox" name="nav" id="nav" class="navigation-checkbox">
+        <label for="nav" class="navigation-handle">
+            <span class="navigation-icon">&nbsp;</span>
+        </label>
+        <div class="navigation-background">&nbsp;</div>
+        <div class="navigation-nav">
+            <ul class="navigation-list">
+                <li class="navigation-item"><a href="about.html" class="navigation-link uppercase"> About </a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link uppercase"> program</a></li>
+                <li class="navigation-item"><a href="#" class="navigation-link uppercase"> sponsors</a></li>
+                <li class="navigation-item"><a href="tickets.html" class="navigation-link uppercase">tickets</a></li>
+
+            </ul>
+        </div>
+    </div>
     <!-- nav --------------- section ------------------------- for desctop  -->
 
     <nav class="navbar">
@@ -44,11 +61,12 @@
                     </a>
                 </div>
                 <ul class="navbar_nav_ul">
-                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">about</a></li>
+                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="about.html">about</a></li>
                     <li class="navbar_nav_li"><a class="navbar_nav_a" href="#">program</a></li>
                     <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">sponsors</a></li>
-                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">news</a></li>
-                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="#">Tickets</a></li>
+                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="tickets.html">tickets</a></li>
+
+
 
                 </ul>
             </div>
@@ -125,18 +143,18 @@
             <a class="program_box_link white-text" href="#">See the whole program</a>
         </div>
     </section>
-    <!-- featured dance --------------------- sect -->
+    <!-- featured------------ dance --------------------- sect -->
     <section class="featured-dances">
         <h3 class="h-3 gray-text border">featured dances
         </h3>
         <div class="featured-dances_grid">
-            <div class="featured-dances_dance">
+            <div class="featured-dances_dance my-1">
                 <div class="featured-dances_imgcont">
                     <img class="featured-dances_img" src="img/hip-hop.jpeg" alt="dance">
                 </div>
                 <div class="featured-dances_about">
-                    <h4 class=" gray-text brd_left">Modern</h4>
-                    <span class=" gray-text">something about the dance</span>
+                    <h4 class=" gray-text brd_left  my-0 ">Modern</h4>
+                    <span class=" gray-text orange-text my-1 italic uppercase">something about the dance</span>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis placeat laboriosam magni aut
                         quos
                         quo atque recusandae .</p>
@@ -185,7 +203,7 @@
             </div>
 
 
-            <div class="featured-dances_dance">
+            <div class="featured-dances_dance my-1">
                 <div class="featured-dances_imgcont">
                     <img class="featured-dances_img" src="img/hip-hop.jpeg" alt="dance">
                 </div>
@@ -204,7 +222,7 @@
             </div>
 
 
-            <div class="featured-dances_dance">
+            <div class="featured-dances_dance my-1">
                 <div class="featured-dances_imgcont">
                     <img class="featured-dances_img" src="img/hip-hop.jpeg" alt="dance">
                 </div>
@@ -284,14 +302,18 @@
                     </svg>
                     <span class=" footer_left_copycontainer">
                         <span class="footer_left_copyright gray-text coco uppercase">&copy; vmwhoami limited </span>
-                        <span class="footer_left_copyright gray-text coco uppercase"> &copysr; some rights
+                        <span class="footer_left_copyright gray-text coco uppercase"> some rights
                             reserved</span>
                     </span>
                 </a>
             </div>
             <div class="footer_right">
-                <a href="#">
-                    Cindy Shin
+                <a class="footer_right_link gray-text nodeco uppercase" href="#">
+                    <svg class="footer_logo" class="navbar_social_svg">
+                        <use xlink:href="img/sprite.svg#icon-cc"></use>
+                    </svg>
+
+                    <span class=" coco"> Cindy Shin</span>
                 </a>
 
             </div>

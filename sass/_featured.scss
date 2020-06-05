@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     &_grid {
         max-width: 120rem;
         align-self: center;
@@ -11,17 +12,27 @@
         display: flex;
         flex-flow: row wrap;
     }
-    &_dance{
+
+    &_dance {
         flex: 0 1 50%;
+        padding: 1rem;
         display: flex;
     }
-    &_imgcont{
-        flex:0 1 30%;
+
+    &_imgcont {
+        flex: 0 0 40%;
     }
-    &_img{
+
+    &_img {
         width: 100%;
+        object-fit: cover;
+
     }
-    &_about{
-        padding: 0 1rem;
+
+    &_about {
+        flex: 1 1 60%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 2rem;
     }
 }

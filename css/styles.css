@@ -38,8 +38,24 @@ body {
   font-family: coco;
 }
 
+.nodeco {
+  text-decoration: none;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.my-0 {
+  margin: 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .h-3 {
@@ -182,6 +198,122 @@ body {
   color: var(--dark);
 }
 
+.navigation {
+  display: none;
+}
+.navigation-checkbox {
+  display: none;
+}
+.navigation-handle {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  top: 4rem;
+  left: 4rem;
+  background-color: white;
+  z-index: 250;
+  box-shadow: 0 1rem 1rem #00000011;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.navigation-icon {
+  position: relative;
+}
+.navigation-icon, .navigation-icon::before, .navigation-icon::after {
+  width: 2rem;
+  height: 2px;
+  background-color: grey;
+  display: inline-block;
+  position: absolute;
+  transition: all 0.2s;
+}
+.navigation-icon::before, .navigation-icon::after {
+  content: "";
+  left: 0;
+}
+.navigation-icon::before {
+  top: -0.8rem;
+}
+.navigation-icon::after {
+  top: 0.8rem;
+}
+.navigation-handle:hover .navigation-icon::before {
+  top: -1rem;
+  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.navigation-handle:hover .navigation-icon::after {
+  top: 1rem;
+  transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.navigation-background {
+  position: fixed;
+  width: 2rem;
+  height: 2rem;
+  top: 4.5rem;
+  left: 4.5rem;
+  background: var(--orange);
+  border-radius: 50%;
+  z-index: 100;
+  transition: transform 0.8s cubic-bezier(0.09, 1.15, 0.97, 0.98);
+}
+.navigation-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 200;
+  width: 0;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.navigation-list {
+  position: absolute;
+  list-style: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navigation-item {
+  margin: 1rem;
+}
+.navigation-link:link, .navigation-link:visited {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 235%;
+  transition: background-position 0.4s ease;
+}
+.navigation-link:hover, .navigation-link:active {
+  background-position: 100%;
+}
+.navigation-checkbox:checked ~ .navigation-background {
+  transform: scale(100);
+}
+.navigation-checkbox:checked ~ .navigation-nav {
+  width: 100%;
+  opacity: 1;
+}
+.navigation-checkbox:checked + .navigation-handle .navigation-icon {
+  background-color: transparent;
+}
+.navigation-checkbox:checked + .navigation-handle .navigation-icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.navigation-checkbox:checked + .navigation-handle .navigation-icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
 .header {
   top: 10rem;
   min-height: 70rem;
@@ -315,16 +447,21 @@ body {
 }
 .featured-dances_dance {
   flex: 0 1 50%;
+  padding: 1rem;
   display: flex;
 }
 .featured-dances_imgcont {
-  flex: 0 1 30%;
+  flex: 0 0 40%;
 }
 .featured-dances_img {
   width: 100%;
+  object-fit: cover;
 }
 .featured-dances_about {
-  padding: 0 1rem;
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
 }
 
 .partners {
@@ -352,10 +489,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 .footer_container {
   flex: 1 1 120rem;
   display: flex;
+  flex-wrap: wrap;
 }
 .footer_left {
   flex: 0 1 50%;
@@ -382,6 +521,15 @@ body {
 .footer_logo {
   fill: var(--dark-light);
   width: 10rem;
+}
+.footer_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_right_link {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
