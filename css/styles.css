@@ -546,6 +546,17 @@ body {
   border: 2px solid #ffffffd8;
   margin: 1rem;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 48em) {
+  .program_box {
+    flex-direction: row;
+  }
+  .program_box > * {
+    flex: 1;
+  }
 }
 .program_box:hover {
   background-color: #ffffff36;

@@ -33,11 +33,18 @@
     &_box {
         flex: 1 1 25rem;
         background-color: #ffffff11;
-
         border: 2px solid #ffffffd8;
-
         margin: 1rem;
         transition: all .3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (max-width:48em) {
+            flex-direction: row;
+            &>*{
+                flex:1;
+            }
+        }
 
         &:hover {
             background-color: #ffffff36;
