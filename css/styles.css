@@ -450,7 +450,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .header_bigheading {
-    left: 30%;
+    left: 40%;
     max-width: 65%;
     line-height: 1.4;
     font-weight: 400;
@@ -464,7 +464,7 @@ body {
   margin: 1rem;
   padding: 5rem;
   display: inline-block;
-  width: 60%;
+  width: 50%;
   background-color: rgba(255, 255, 255, 0.932);
   border: 5px solid #aaaaaa;
 }
@@ -472,6 +472,11 @@ body {
   .header_description {
     padding: 2rem;
   }
+}
+.header_date {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .program {

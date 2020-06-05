@@ -71,7 +71,7 @@
         font-weight: 900;
 
         @media screen and (max-width:768px) {
-            left: 30%;
+            left: 40%;
             max-width: 65%;
             line-height: 1.4;
             font-weight: 400;
@@ -87,12 +87,18 @@
         margin: 1rem;
         padding: 5rem;
         display: inline-block;
-        width: 60%;
+        width: 50%;
         background-color: rgba(255, 255, 255, 0.932);
         border: 5px solid rgb(170, 170, 170);
 
         @media screen and (max-width:768px) {
             padding: 2rem;
         }
+    }
+
+    &_date {
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
 }
