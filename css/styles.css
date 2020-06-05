@@ -284,7 +284,7 @@ body {
   left: 4rem;
   background-color: white;
   z-index: 250;
-  box-shadow: 0 1rem 1rem #00000011;
+  box-shadow: 0 1rem 1rem #0000004d;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -365,9 +365,10 @@ body {
 }
 .navigation-link:hover, .navigation-link:active {
   background-position: 100%;
+  color: var(--dark);
 }
 .navigation-checkbox:checked ~ .navigation-background {
-  transform: scale(100);
+  transform: scale(150);
 }
 .navigation-checkbox:checked ~ .navigation-nav {
   width: 100%;
@@ -391,7 +392,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .header {
     top: 0;
   }
@@ -430,7 +431,7 @@ body {
   font-weight: 600;
   color: var(--orange);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .header_smallheading {
     margin-top: 3rem;
   }
@@ -457,6 +458,12 @@ body {
     font-size: 3rem;
   }
 }
+@media screen and (max-width: 26em) {
+  .header_bigheading {
+    max-width: 75%;
+    line-height: 1.1;
+  }
+}
 .header_description {
   position: absolute;
   bottom: 10%;
@@ -468,9 +475,15 @@ body {
   background-color: rgba(255, 255, 255, 0.932);
   border: 5px solid #aaaaaa;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .header_description {
     padding: 2rem;
+  }
+}
+@media screen and (max-width: 26em) {
+  .header_description {
+    bottom: 5%;
+    width: 85%;
   }
 }
 .header_date {
@@ -601,7 +614,7 @@ body {
 .partners_container {
   flex: 1 1 auto;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -619,11 +632,16 @@ body {
 
 .tickets {
   width: 100%;
-  height: 100vh;
+  min-height: 120vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 48em) {
+  .tickets {
+    min-height: 100vh;
+  }
 }
 .tickets::after {
   content: "";
@@ -640,7 +658,8 @@ body {
 }
 .tickets_form {
   flex: 0 1 60rem;
-  background-color: #ffffffe5;
+  background: #ffffffe5;
+  background: linear-gradient(125deg, #ffffffaa 0, #ffffffaa 10%, #ffffffdd 10%, #ffffffdd 90%, #ffffffaa 90%, #ffffffaa 100%);
   border: 1rem solid #ffffff;
   display: flex;
   flex-direction: column;
@@ -681,6 +700,15 @@ body {
 .tickets_button:hover {
   background-color: var(--orange);
   transform: scale(1.1);
+}
+
+.about {
+  height: 100vh;
+  background: url(../img/backdance.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {

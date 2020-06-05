@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:48em) {
         top: 0;
     }
 
@@ -51,7 +51,7 @@
         color: var(--orange);
 
         // text-shadow: 0 1rem 1rem #fff;
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:48em) {
             margin-top: 3rem;
         }
 
@@ -78,6 +78,11 @@
             font-size: 3rem;
 
         }
+
+        @media screen and (max-width:26em) {
+            max-width: 75%;
+            line-height: 1.1;
+        }
     }
 
     &_description {
@@ -91,8 +96,13 @@
         background-color: rgba(255, 255, 255, 0.932);
         border: 5px solid rgb(170, 170, 170);
 
-        @media screen and (max-width:768px) {
+        @media screen and (max-width:48em) {
             padding: 2rem;
+        }
+
+        @media screen and (max-width:26em) {
+            bottom: 5%;
+            width: 85%;
         }
     }
 

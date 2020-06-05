@@ -1,11 +1,13 @@
 .tickets {
     width: 100%;
-    height: 100vh;
+   min-height: 120vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    @media screen and (max-width:48em) {
+        min-height: 100vh;
+    }
 
     &::after {
         content: "";
@@ -23,7 +25,14 @@
 
     &_form {
         flex: 0 1 60rem;
-        background-color: #ffffffe5;
+        background: #ffffffe5;
+        background: linear-gradient(125deg,
+        #ffffffaa 0,
+        #ffffffaa 10%,
+        #ffffffdd 10%,
+        #ffffffdd 90%,
+        #ffffffaa 90%,
+        #ffffffaa 100%);
         border: 1rem solid #ffffff;
         display: flex;
         flex-direction: column;

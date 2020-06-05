@@ -18,7 +18,7 @@
         left: 4rem;
         background-color: white;
         z-index: 250;
-        box-shadow: 0 1rem 1rem #00000011;
+        box-shadow: 0 1rem 1rem #0000004d;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -132,13 +132,13 @@
         &:hover,
         &:active {
             background-position: 100%;
-            // color: $gradient-color1;
+            color: var(--dark);
         }
 
     }
 
     &-checkbox:checked~&-background {
-        transform: scale(100);
+        transform: scale(150);
     }
 
     &-checkbox:checked~&-nav {
