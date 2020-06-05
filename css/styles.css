@@ -34,6 +34,14 @@ body {
   color: var(--dark);
 }
 
+.coco {
+  font-family: coco;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .h-3 {
   align-self: center;
   text-transform: capitalize;
@@ -359,6 +367,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.footer_left_copycontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .footer_right {
   flex: 0 1 50%;

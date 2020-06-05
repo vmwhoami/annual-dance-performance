@@ -41,7 +41,12 @@ body {
 
 ////////Modifiers
 
-
+.coco{
+    font-family: coco;
+}
+.uppercase{
+    text-transform: uppercase;
+}
 .h-3{
     align-self: center;
     text-transform: capitalize;
