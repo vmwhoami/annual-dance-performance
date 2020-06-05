@@ -140,6 +140,25 @@ body {
   border-color: var(--orange);
 }
 
+.middle-shadow {
+  z-index: -1;
+  position: relative;
+}
+.middle-shadow::after {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  width: 50%;
+  top: 80%;
+  max-width: 10rem;
+  background: black;
+  box-shadow: 0 2rem 3rem black;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -631,15 +650,18 @@ body {
 }
 
 .tickets {
+  margin-top: 10rem;
   width: 100%;
-  min-height: 120vh;
+  background-color: #ffffffcc;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 @media screen and (max-width: 48em) {
   .tickets {
+    margin-top: 0;
     min-height: 100vh;
   }
 }
@@ -657,7 +679,7 @@ body {
   z-index: -1;
 }
 .tickets_form {
-  flex: 0 1 60rem;
+  flex: 0 1 auto;
   background: #ffffffe5;
   background: linear-gradient(125deg, #ffffffaa 0, #ffffffaa 10%, #ffffffdd 10%, #ffffffdd 90%, #ffffffaa 90%, #ffffffaa 100%);
   border: 1rem solid #ffffff;
@@ -701,10 +723,21 @@ body {
   background-color: var(--orange);
   transform: scale(1.1);
 }
+.tickets_table {
+  z-index: 4;
+  margin-bottom: 5rem;
+  min-width: 50rem;
+  background-color: white;
+  outline: 1rem dashed #F2D694;
+  box-shadow: 0 0 0 1rem var(--orange);
+  border: 1px solid black;
+}
+.tickets_table, .tickets_table th, .tickets_table td {
+  border: 1px solid black;
+}
 
 .about {
   height: 100vh;
-  background: url(../img/backdance.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
