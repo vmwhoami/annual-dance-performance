@@ -748,11 +748,44 @@ body {
 }
 
 .about {
+  margin-top: 10rem;
   height: 100vh;
+  background-color: var(--light-gray);
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
+}
+.about_container {
+  flex: 0 1 120rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about_heading {
+  padding: 2rem;
+  font-size: 3rem;
+  display: inline-block;
+  font-family: coco;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.about_description {
+  max-width: 80%;
+  background-color: rgba(255, 255, 255, 0.438);
+  border: 1rem solid #ffffffe3;
+  padding: 1rem;
+}
+.about_img {
+  float: left;
+}
+.about_link {
+  margin-top: 2rem;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .footer {
