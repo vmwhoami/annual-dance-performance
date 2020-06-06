@@ -1,11 +1,15 @@
 .about{
    margin-top: 10rem;
-    height: 100vh;
+    height: auto;
    background-color: var( --light-gray);
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid var(--dark-site);
+    @media screen and (max-width:768px) {
+        margin-top: 0;
+    }
 
     &_container{
         flex:0 1 120rem; 
@@ -16,12 +20,13 @@
     }
 
     &_heading{
-        padding: 2rem;
+        margin: 2rem;
         font-size: 3rem;
         display: inline-block;
         font-family: coco;
         text-transform: uppercase;
         font-weight: 900;
+        text-align: center;
     }
     &_description{
         max-width: 80%;
@@ -40,5 +45,34 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+}
+
+
+////////// Past concerts section///////
+
+.past{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-flow: column ;
+    align-items: center;
+    &_container{
+        background-color: burlywood;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &_video{
+        flex: 0 1 60rem;
+        display: flex;
+      justify-content: center;
+
+      
+    }
+    &_iframe{
+     flex: 0 1 50%;
     }
 }
