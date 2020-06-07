@@ -63,6 +63,9 @@
         top: 50%;
         background-image:linear-gradient(to bottom, var(--orange), #EC524222)  ,url(../img/concert_hall.jpg);
         background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         transform: translateY(-90%);
         max-width: 40%;
         padding: 2rem;
@@ -71,9 +74,7 @@
         font-family: coco;
         text-transform: uppercase;
         font-weight: 900;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+      
         
         // &::after{
         //     content: "";

@@ -28,7 +28,14 @@
         text-transform: uppercase;
         font-weight: 900;
         text-align: center;
+        background-image:linear-gradient(to bottom, var(--orange), #EC524222)  ,url(../img/concert_hall.jpg);
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        max-width: 60%;
         @media screen and (max-width:768px) {
+            max-width: 80%;
            margin-top: 10rem;
          }
     }

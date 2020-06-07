@@ -474,6 +474,9 @@ body {
   top: 50%;
   background-image: linear-gradient(to bottom, var(--orange), #EC524222), url(../img/concert_hall.jpg);
   background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: translateY(-90%);
   max-width: 40%;
   padding: 2rem;
@@ -482,9 +485,6 @@ body {
   font-family: coco;
   text-transform: uppercase;
   font-weight: 900;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 768px) {
   .header_bigheading {
@@ -794,6 +794,12 @@ body {
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
+  background-image: linear-gradient(to bottom, var(--orange), #EC524222), url(../img/concert_hall.jpg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 60%;
 }
 @media screen and (max-width: 768px) {
   .about_heading {
