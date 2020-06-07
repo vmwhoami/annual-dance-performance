@@ -471,20 +471,18 @@ body {
 .header_bigheading {
   position: absolute;
   left: 60%;
-  top: 50%;
+  top: 20%;
   background-image: linear-gradient(to bottom, var(--orange), #EC524222), url(../img/concert_hall.jpg);
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: translateY(-90%);
   max-width: 40%;
   padding: 2rem;
   font-size: 3rem;
   display: inline-block;
   font-family: coco;
   text-transform: uppercase;
-  font-weight: 900;
 }
 @media screen and (max-width: 768px) {
   .header_bigheading {
@@ -676,7 +674,6 @@ body {
 .partners_container {
   flex: 1 1 auto;
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
@@ -771,9 +768,6 @@ body {
   margin-bottom: 5rem;
   min-width: 50rem;
   background-color: white;
-  outline: 1rem dashed #F2D694;
-  box-shadow: 0 0 0 1rem var(--orange);
-  border: 1px solid black;
 }
 .tickets_table, .tickets_table th, .tickets_table td {
   border: 1px solid black;
@@ -828,6 +822,10 @@ body {
   background-color: rgba(255, 255, 255, 0.438);
   border: 2px solid var(--line);
   padding: 1rem;
+  border: 10px solid transparent;
+  border-image: url(../img/bord.png);
+  border-image-repeat: repeat;
+  border-image-slice: 30;
 }
 @media screen and (max-width: 48em) {
   .about_description {

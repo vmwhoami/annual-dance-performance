@@ -45,6 +45,12 @@
         background-color: rgba(255, 255, 255, 0.438);
         border: 2px solid var(--line);
         padding: 1rem;
+        border: 10px solid transparent;
+        border-image: url(../img/bord.png)  ;
+        border-image-repeat: repeat;
+        border-image-slice: 30;
+        
+       
         @media screen and (max-width:48em) {
             max-width: 90%;
         }

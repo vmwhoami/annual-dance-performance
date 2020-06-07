@@ -60,20 +60,20 @@
     &_bigheading {
         position: absolute;
         left: 60%;
-        top: 50%;
+        top: 20%;
         background-image:linear-gradient(to bottom, var(--orange), #EC524222)  ,url(../img/concert_hall.jpg);
         background-size: cover;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        transform: translateY(-90%);
+      
         max-width: 40%;
         padding: 2rem;
         font-size: 3rem;
         display: inline-block;
         font-family: coco;
         text-transform: uppercase;
-        font-weight: 900;
+
       
 
         @media screen and (max-width:768px) {
