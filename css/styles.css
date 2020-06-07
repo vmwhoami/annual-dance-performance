@@ -13,6 +13,7 @@
   --dark-site: #272a31;
   --orange: #EC5242;
   --light-gray: #D3D3D3;
+  --back:#F7F7F7;
 }
 
 *,
@@ -761,14 +762,14 @@ body {
 .about {
   margin-top: 10rem;
   height: auto;
-  background-color: var(--light-gray);
+  background-color: var(--back);
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid var(--dark-site);
+  border-bottom: 1px solid var(--back);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .about {
     margin-top: 0;
   }
@@ -789,44 +790,79 @@ body {
   font-weight: 900;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .about_heading {
+    margin-top: 10rem;
+  }
+}
 .about_description {
   max-width: 80%;
   background-color: rgba(255, 255, 255, 0.438);
   border: 1rem solid #ffffffe3;
   padding: 1rem;
 }
+@media screen and (max-width: 48em) {
+  .about_description {
+    max-width: 100%;
+  }
+}
 .about_img {
   float: left;
 }
 .about_link {
   margin-top: 2rem;
-  max-width: 40%;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+@media screen and (max-width: 48em) {
+  .about_link {
+    max-width: 90%;
+  }
+}
 
 .past {
   background-color: white;
-  height: 100vh;
   display: flex;
   flex-flow: column;
   align-items: center;
 }
 .past_container {
-  background-color: burlywood;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .past_container {
+    flex-direction: column;
+    height: auto;
+  }
+}
 .past_video {
   flex: 0 1 60rem;
+  padding: 3rem;
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .past_video {
+    width: 100%;
+    flex: 1 1 auto;
+    padding: 1rem 0;
+  }
+}
 .past_iframe {
-  flex: 0 1 50%;
+  flex: 1 1 auto;
+  min-height: 30rem;
+}
+@media screen and (max-width: 768px) {
+  .past_iframe {
+    flex: 1 1 auto;
+    padding: 1rem;
+    min-height: 40rem;
+  }
 }
 
 .footer {

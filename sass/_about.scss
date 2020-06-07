@@ -1,13 +1,13 @@
 .about{
    margin-top: 10rem;
     height: auto;
-   background-color: var( --light-gray);
+   background-color: var(--back);
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid var(--dark-site);
-    @media screen and (max-width:768px) {
+    border-bottom: 1px solid var(--back);
+    @media screen and (max-width:48em) {
         margin-top: 0;
     }
 
@@ -17,6 +17,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+      
     }
 
     &_heading{
@@ -27,12 +28,18 @@
         text-transform: uppercase;
         font-weight: 900;
         text-align: center;
+        @media screen and (max-width:768px) {
+           margin-top: 10rem;
+         }
     }
     &_description{
         max-width: 80%;
         background-color: rgba(255, 255, 255, 0.438);
         border: 1rem solid #ffffffe3;
         padding: 1rem;
+        @media screen and (max-width:48em) {
+            max-width: 100%;
+        }
     }
 
     &_img{
@@ -41,10 +48,13 @@
 
     &_link{
         margin-top: 2rem;
-        max-width: 40%;
+        max-width: 50%;
         display: flex;
         flex-direction: column;
         text-align: center;
+        @media screen and (max-width:48em) {
+            max-width: 90%;
+        }
     }
 }
 
@@ -53,26 +63,41 @@
 
 .past{
     background-color: white;
-    height: 100vh;
+   
     display: flex;
     flex-flow: column ;
     align-items: center;
     &_container{
-        background-color: burlywood;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width:768px) {
+           flex-direction: column;
+           height: auto;
+        }
     }
 
     &_video{
         flex: 0 1 60rem;
+        padding: 3rem;
         display: flex;
       justify-content: center;
+      @media screen and (max-width:768px) {
+          width: 100%;
+       flex:1 1 auto;
+       padding: 1rem 0;
 
+     }
       
     }
     &_iframe{
-     flex: 0 1 50%;
+     flex: 1 1 auto;
+     min-height: 30rem;
+     @media screen and (max-width:768px) {
+        flex:1 1 auto;
+        padding: 1rem;
+        min-height: 40rem;
+      }
     }
 }
