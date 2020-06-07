@@ -111,7 +111,7 @@
                height: 50%;
                outline: .5rem solid var(--orange);
             //    background-color: chocolate;
-               z-index: 300;
+            //    z-index: 300;
            }
         }
 
@@ -164,6 +164,7 @@
             align-items: center;
             z-index: 200;
             transition: all .2s;
+            z-index: 1000;
         }
 
 

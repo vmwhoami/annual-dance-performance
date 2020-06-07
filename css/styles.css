@@ -250,7 +250,6 @@ body {
   width: 80%;
   height: 50%;
   outline: 0.5rem solid var(--orange);
-  z-index: 300;
 }
 .navbar_nav_li {
   height: 100%;
@@ -294,6 +293,7 @@ body {
   align-items: center;
   z-index: 200;
   transition: all 0.2s;
+  z-index: 1000;
 }
 
 .navigation {
@@ -472,6 +472,8 @@ body {
   position: absolute;
   left: 60%;
   top: 50%;
+  background-image: linear-gradient(to bottom, var(--orange), #EC524222), url(../img/concert_hall.jpg);
+  background-size: cover;
   transform: translateY(-90%);
   max-width: 40%;
   padding: 2rem;
@@ -480,6 +482,9 @@ body {
   font-family: coco;
   text-transform: uppercase;
   font-weight: 900;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 768px) {
   .header_bigheading {
