@@ -6,7 +6,7 @@
     background-size: cover;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid var(--back);
+    border-bottom: 2px solid var(--back);
     @media screen and (max-width:48em) {
         margin-top: 0;
     }
@@ -17,6 +17,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        border-bottom:2px solid var(--line);
       
     }
 
@@ -108,4 +109,11 @@
         min-height: 40rem;
       }
     }
+}
+
+//////////More info section
+
+.moreinfo{
+height: 100vh;
+border-bottom:2px solid var(--line);
 }

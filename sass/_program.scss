@@ -33,7 +33,7 @@
     &_box {
         flex: 1 1 25rem;
         background-color: #ffffff11;
-        border: 2px solid #ffffffd8;
+       
         margin: 1rem;
         transition: all .3s;
         display: flex;
@@ -49,6 +49,7 @@
         &:hover {
             background-color: #ffffff36;
             box-shadow: 0 .5rem 2rem #fcfcfc22;
+            outline: 3px solid #ffffffd8;
         }
 
 
