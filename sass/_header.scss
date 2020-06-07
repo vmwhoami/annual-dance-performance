@@ -37,8 +37,8 @@
         background: linear-gradient(125deg,
                 #ffffff00 0,
                 #ffffff00 50%,
-                #fff 50%,
-                #fff 100%);
+                var(--back) 50%,
+                var(--back) 100%);
     }
 
 
@@ -90,11 +90,11 @@
         bottom: 10%;
         right: 0;
         margin: 1rem;
-        padding: 5rem;
+        padding: 2rem;
         display: inline-block;
         width: 50%;
-        background-color: rgba(255, 255, 255, 0.932);
-        border: 5px solid rgb(170, 170, 170);
+        // background-color: rgba(255, 255, 255, 0.932);
+        border: .5rem solid white;
 
         @media screen and (max-width:48em) {
             padding: 2rem;

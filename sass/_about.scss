@@ -35,15 +35,16 @@
     &_description{
         max-width: 80%;
         background-color: rgba(255, 255, 255, 0.438);
-        border: 1rem solid #ffffffe3;
+        border: 2px solid var(--line);
         padding: 1rem;
         @media screen and (max-width:48em) {
-            max-width: 100%;
+            max-width: 90%;
         }
     }
 
     &_img{
         float: left;
+        margin: 1rem;
     }
 
     &_link{
