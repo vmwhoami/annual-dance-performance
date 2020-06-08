@@ -72,6 +72,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 
-- Design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07) 
+- Special thanks for the Design idea to [Cindy Shin in Behance](https://www.behance.net/adagio07) 
 
 
