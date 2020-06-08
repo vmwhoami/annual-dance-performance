@@ -9,6 +9,9 @@
 }
 
 //Variables
+$coco:"coco",
+Helvetica,
+sans-serif;
 
 :root {
     --dark: #272A31;
@@ -60,7 +63,7 @@ p {
 ////////Modifiers
 
 .coco {
-    font-family: coco, Arial, Verdana, Tahoma, sans-serif;
+    font-family: $coco;
 }
 
 .nodeco {

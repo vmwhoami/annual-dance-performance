@@ -66,12 +66,14 @@
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-
         max-width: 40%;
         padding: 2rem;
         font-size: 3rem;
         display: inline-block;
-        font-family: coco;
+        font-family: "coco",
+            Helvetica,
+            sans-serif;
+        ;
         text-transform: uppercase;
 
 

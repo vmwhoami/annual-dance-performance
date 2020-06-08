@@ -58,7 +58,7 @@ p {
 }
 
 .coco {
-  font-family: coco, Arial, Verdana, Tahoma, sans-serif;
+  font-family: "coco", Helvetica, sans-serif;
 }
 
 .nodeco {
@@ -245,7 +245,7 @@ p {
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: coco;
+  font-family: "coco", Helvetica, sans-serif;
   line-height: 1.4;
 }
 
@@ -542,7 +542,7 @@ p {
   padding: 2rem;
   font-size: 3rem;
   display: inline-block;
-  font-family: coco;
+  font-family: "coco", Helvetica, sans-serif;
   text-transform: uppercase;
 }
 
@@ -999,7 +999,7 @@ p {
   margin: 2rem;
   font-size: 3rem;
   display: inline-block;
-  font-family: coco;
+  font-family: "coco", Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
