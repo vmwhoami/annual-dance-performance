@@ -488,7 +488,7 @@ p {
   font-family: coco;
   text-transform: uppercase;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .header_bigheading {
     left: 40%;
     max-width: 65%;
@@ -499,6 +499,7 @@ p {
 }
 @media screen and (max-width: 26em) {
   .header_bigheading {
+    top: 10%;
     max-width: 75%;
     line-height: 1.1;
   }
@@ -541,7 +542,8 @@ p {
 }
 @media screen and (max-width: 26em) {
   .header_date {
-    bottom: 46%;
+    bottom: 40%;
+    font-size: 2rem;
   }
 }
 
@@ -678,6 +680,7 @@ p {
 .partners_container {
   flex: 1 1 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -689,6 +692,7 @@ p {
 .partners_box {
   margin: 1rem 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -724,20 +728,26 @@ p {
 }
 .tickets_table {
   z-index: 4;
-  min-width: 50rem;
+  width: 50rem;
   background-color: white;
 }
 .tickets_table,
 .tickets_table th,
 .tickets_table td {
-  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  border: 2px solid var(--line);
+}
+@media screen and (max-width: 48em) {
+  .tickets_table {
+    width: 100%;
+  }
 }
 .tickets_table-cont {
   border: 10px solid #fff;
   border-image-source: url(../img/bigpattern.png);
   border-image-slice: 40;
   border-image-repeat: repeat;
-  border-image-width: 1rem;
   margin-bottom: 5rem;
   position: relative;
   z-index: 50;
@@ -750,10 +760,15 @@ p {
   transform: translateX(-50%);
   width: 40rem;
   height: 4rem;
-  background-color: gray;
+  background-color: transparent;
   border-radius: 50%;
   box-shadow: 0 4rem 5rem #000;
   z-index: -1;
+}
+@media screen and (max-width: 48em) {
+  .tickets_table-cont::after {
+    width: 31rem;
+  }
 }
 .tickets_step {
   width: 100%;
@@ -781,7 +796,7 @@ p {
   bottom: -1rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 110;
+  z-index: 50;
 }
 .tickets_step_instr {
   flex: 0 1 60rem;

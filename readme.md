@@ -1,4 +1,4 @@
-# Advanced CSS course from Udemy side project
+# 
 
 
 > In this project, I learned how to build your own bootstrap grid using floats
@@ -7,7 +7,7 @@
 
 > Building this project was fun as we practiced different CSS rules learned about new CSS tricks using pure CSS
 
-![screenshot](https://raw.githubusercontent.com/vmwhoami/advanced-css/work-home/img/Screenshot_1.jpg)
+![screenshot]()
 
 
 This project covers the following HTML and CSS3 concepts
@@ -21,11 +21,12 @@ This project covers the following HTML and CSS3 concepts
 - HTML
 - CSS
 - Google fonts
-- Font Awesome
+
 
 ## Live Demo
+[Live Demo on GitHack](https://raw.githack.com/vmwhoami/annual-concert/work-branch/index.html)
 
-[Live Demo Link](https://gracious-lovelace-f8f389.netlify.app/)
+[Live Demo on Netlify](https://suspicious-benz-614d91.netlify.app/)
 
 ## Getting Started
 
@@ -36,7 +37,7 @@ $ cd <folder>
 ```
 
 ```
-$ git clone https://github.com/vmwhoami/advanced-css
+$ git clone https://github.com/vmwhoami/annual-concert
 
 ```
 
@@ -55,5 +56,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Project originally taken from Udemy Advanced CSS and Sass
 - Project inspired by Microverse Program
