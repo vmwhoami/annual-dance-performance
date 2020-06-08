@@ -1,27 +1,29 @@
-.about{
-   margin-top: 10rem;
+.about {
+    margin-top: 10rem;
     height: auto;
-   background-color: var(--back);
+    background-color: var(--back);
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid var(--back);
+
+    border-bottom: 2px solid var(--line);
+
     @media screen and (max-width:48em) {
         margin-top: 0;
     }
 
-    &_container{
-        flex:0 1 120rem; 
-        display: flex; 
+    &_container {
+        flex: 0 1 120rem;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border-bottom:2px solid var(--line);
-      
+
+
     }
 
-    &_heading{
+    &_heading {
         margin: 2rem;
         font-size: 3rem;
         display: inline-block;
@@ -29,44 +31,45 @@
         text-transform: uppercase;
         font-weight: 900;
         text-align: center;
-        background-image:linear-gradient(to bottom, var(--orange), #EC524222)  ,url(../img/concert_hall.jpg);
+        background-image: linear-gradient(to bottom, var(--orange), #EC524222), url(../img/concert_hall.jpg);
         background-size: cover;
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         max-width: 60%;
+
         @media screen and (max-width:768px) {
             max-width: 80%;
-           margin-top: 10rem;
-         }
+            margin-top: 10rem;
+        }
     }
-    &_description{
+
+    &_description {
         max-width: 80%;
         background-color: rgba(255, 255, 255, 0.438);
         border: 2px solid var(--line);
         padding: 1rem;
-        border: 10px solid transparent;
-        border-image: url(../img/bord.png)  ;
-        border-image-repeat: repeat;
-        border-image-slice: 30;
-        
-       
+
+
+
         @media screen and (max-width:48em) {
             max-width: 90%;
         }
     }
 
-    &_img{
+    &_img {
         float: left;
         margin: 1rem;
     }
 
-    &_link{
+    &_link {
         margin-top: 2rem;
         max-width: 50%;
         display: flex;
         flex-direction: column;
         text-align: center;
+
+
         @media screen and (max-width:48em) {
             max-width: 90%;
         }
@@ -76,50 +79,78 @@
 
 ////////// Past concerts section///////
 
-.past{
+.past {
     background-color: white;
-   
+
     display: flex;
-    flex-flow: column ;
+    flex-flow: column;
     align-items: center;
-    &_container{
+
+    &_container {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+
         @media screen and (max-width:768px) {
-           flex-direction: column;
-           height: auto;
+            flex-direction: column;
+            height: auto;
         }
     }
 
-    &_video{
+    &_video {
         flex: 0 1 60rem;
         padding: 3rem;
         display: flex;
-      justify-content: center;
-      @media screen and (max-width:768px) {
-          width: 100%;
-       flex:1 1 auto;
-       padding: 1rem 0;
+        justify-content: center;
 
-     }
-      
+        @media screen and (max-width:768px) {
+            width: 100%;
+            flex: 1 1 auto;
+            padding: 1rem 0;
+
+        }
+
     }
-    &_iframe{
-     flex: 1 1 auto;
-     min-height: 30rem;
-     @media screen and (max-width:768px) {
-        flex:1 1 auto;
-        padding: 1rem;
-        min-height: 40rem;
-      }
+
+    &_iframe {
+        flex: 1 1 auto;
+        min-height: 30rem;
+
+        @media screen and (max-width:768px) {
+            flex: 1 1 auto;
+            padding: 1rem;
+            min-height: 40rem;
+        }
     }
 }
 
 //////////More info section
 
-.moreinfo{
-height: 100vh;
-border-bottom:2px solid var(--line);
+.moreinfo {
+
+    border-bottom: 2px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_text {
+        max-width: 100rem;
+        text-align: center;
+    }
+
+    &_logo {
+        align-self: center;
+        padding: 3rem 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &_svg {
+        padding: 3rem 0;
+        min-width: 50rem;
+        fill: var(--orange);
+        border: 2px solid var(--line);
+    }
 }

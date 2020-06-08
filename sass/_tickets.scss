@@ -1,13 +1,13 @@
 .tickets {
     margin-top: 10rem;
     width: 100%;
-background-color: #ffffffcc;
+    background-color: #ffffffcc;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     @media screen and (max-width:48em) {
         margin-top: 0;
         min-height: 100vh;
@@ -27,19 +27,102 @@ background-color: #ffffffcc;
         z-index: -1;
     }
 
+
+    // ////////////////////the table with the price//////////////
+
+    &_table {
+        z-index: 4;
+
+        min-width: 50rem;
+        background-color: white;
+
+
+
+
+        &,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    }
+
+    &_table-cont {
+        border: 10px solid #fff;
+        border-image-source: url(../img/bigpattern.png);
+        border-image-slice: 40;
+        border-image-repeat: repeat;
+        border-image-width: 1rem;
+        margin-bottom: 5rem;
+        position: relative;
+        z-index: 50;
+
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40rem;
+            height: 4rem;
+            background-color: gray;
+            border-radius: 50%;
+            box-shadow: 0 4rem 5rem #000;
+            z-index: -1;
+        }
+    }
+
+    ////// Step & guidlines
+
+
+    &_step {
+        width: 100%;
+        height: 20rem;
+        background-color: white;
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+
+        &_instr {
+            flex: 0 1 60rem;
+            align-self: center;
+            border: 2px solid ();
+        }
+    }
+
+
+
+
+
+
     &_form {
         flex: 0 1 auto;
         background: #ffffffe5;
         background: linear-gradient(125deg,
-        #ffffffaa 0,
-        #ffffffaa 10%,
-        #ffffffdd 10%,
-        #ffffffdd 90%,
-        #ffffffaa 90%,
-        #ffffffaa 100%);
+                #ffffffaa 0,
+                #ffffffaa 10%,
+                #ffffffdd 10%,
+                #ffffffdd 90%,
+                #ffffff8a 90%,
+                #ffffff8a 100%);
         border: 1rem solid #ffffff;
         display: flex;
         flex-direction: column;
+
+        margin-bottom: 3rem;
+
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40rem;
+            height: 4rem;
+            background-color: gray;
+            border-radius: 50%;
+            box-shadow: 0 4rem 5rem #000;
+            z-index: -1;
+        }
     }
 
     &_inputs {
@@ -84,21 +167,6 @@ background-color: #ffffffcc;
             transform: scale(1.1);
         }
     }
-    &_table{
-        z-index: 4;
-        margin-bottom: 5rem;
-       min-width: 50rem;
-       background-color: white;
-        // outline: 1rem dashed rgb(4, 47, 126);
-        // box-shadow: 0 0 0 1rem var(--orange);
-        // border: 10px solid red;
-        // border-image: url(../img/border.png) 27 round;
 
 
-        
-     &, th,td {
-        border: 1px solid black;
-     }
-    }
 }
-

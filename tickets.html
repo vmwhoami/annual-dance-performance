@@ -83,50 +83,53 @@
 
     <!-- buy tickets completion form  -->
 
-
-
     <main class="tickets">
         <h3 class="h-3 border gray-text my-1">Select your tickets</h3>
         <!-- ///////table///// -->
-        <table class="tickets_table">
-            <tr>
-                <th class="coco orange-text">Rows</th>
-                <th>First</th>
-                <th>Middle</th>
-                <th>Last</th>
-                <th>Balcony</th>
+        <div class="tickets_table-cont">
+            <table class="tickets_table">
+                <tr>
+                    <th class="coco orange-text">Rows</th>
+                    <th>First</th>
+                    <th>Middle</th>
+                    <th>Last</th>
+                    <th>Balcony</th>
 
-            </tr>
-            <tr>
-                <td class="coco ">Price</td>
-                <td>50$</td>
-                <td>30$</td>
-                <td>20$</td>
-                <td>15$</td>
-            </tr>
+                </tr>
+                <tr>
+                    <td class="coco ">Price</td>
+                    <td>50$</td>
+                    <td>30$</td>
+                    <td>20$</td>
+                    <td>15$</td>
+                </tr>
 
-            <tr>
-                <td class="coco ">Tax</td>
-                <td>Swanson</td>
-                <td>$300</td>
-                <td>$300</td>
-                <td>$300</td>
-            </tr>
-            <tr>
-                <td>total</td>
-                <td>Cleveland</td>
-                <td>Brown</td>
-                <td>$250</td>
-                <td>$250</td>
-            </tr>
+                <tr>
+                    <td class="coco ">Tax</td>
+                    <td>2$</td>
+                    <td>1.5$</td>
+                    <td>1$</td>
+                    <td>.50$</td>
+                </tr>
+                <tr>
+                    <td class="coco h-3">total</td>
+                    <td>52$</td>
+                    <td>31.5$</td>
+                    <td>21$</td>
+                    <td>15.50$</td>
+                </tr>
 
-        </table>
+            </table>
+        </div>
+
+        <div class="tickets_step">
+            <div class="tickets_step_instr">
+                <span>1. Choose your seat</span>
+            </div>
+        </div>
 
 
-
-
-
-        <form class="tickets_form mx-1" action="#">
+        <form class="tickets_form mx-1  " action="#">
             <div class="tickets_inputs">
                 <label class=" uppercase gray-text brd_left my-1 coco " for="name">Name</label>
                 <input class="tickets_inpfield" type="text" placeholder="Name" id="name">

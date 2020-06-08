@@ -16,8 +16,8 @@
     --dark-site: #272a31;
     --orange: #EC5242;
     --light-gray: #D3D3D3;
-    --back:#F7F7F7;
-    --line:#E6E6E6;
+    --back: #F7F7F7;
+    --line: #E6E6E6;
 }
 
 //Sass Variables
@@ -43,6 +43,10 @@ body {
     font-size: 1.6rem;
     line-height: 1.6;
     color: var(--dark);
+}
+
+p {
+    text-indent: 2rem;
 }
 
 .container {
@@ -147,10 +151,11 @@ body {
     border-color: var(--orange);
 }
 
-.middle-shadow{
+.middle-shadow {
     z-index: -1;
     position: relative;
-    &::after{
+
+    &::after {
         z-index: 1;
         position: absolute;
         content: "";
@@ -160,11 +165,9 @@ body {
         border-radius: 50%;
         width: 50%;
         top: 80%;
-        max-width:10rem;
+        max-width: 10rem;
         background: rgb(0, 0, 0);
         box-shadow: 0 2rem 3rem rgb(0, 0, 0);
         // transform: rotate(-90deg);
-      }
+    }
 }
-
-
