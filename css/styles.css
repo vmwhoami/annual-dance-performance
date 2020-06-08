@@ -759,14 +759,37 @@ p {
   width: 100%;
   height: 20rem;
   background-color: white;
-  margin: 1rem 0;
+  margin: 4rem 0;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+.tickets_step::after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  background-color: var(--orange);
+}
+.tickets_step::before {
+  content: "v";
+  color: white;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 110;
 }
 .tickets_step_instr {
   flex: 0 1 60rem;
   align-self: center;
-  border: 2px solid;
+  border: 2px solid var(--line);
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 5rem;
 }
 .tickets_form {
   flex: 0 1 auto;
