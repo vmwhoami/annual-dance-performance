@@ -16,10 +16,12 @@
     }
 
     &_heading {
-        color: white;
+        color: var(--orange);
         text-transform: capitalize;
         font-size: 2rem;
     }
+
+
 
     &_box_container {
         display: flex;
@@ -33,16 +35,18 @@
     &_box {
         flex: 1 1 25rem;
         background-color: #ffffff11;
-       
+
         margin: 1rem;
         transition: all .3s;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         @media screen and (max-width:48em) {
             flex-direction: row;
-            &>*{
-                flex:1;
+
+            &>* {
+                flex: 1;
             }
         }
 
@@ -78,9 +82,6 @@
         fill: white;
     }
 
-    &_heading {
-        color: var(--orange);
-    }
 
     &_text {
         color: white;

@@ -38,17 +38,12 @@
         }
     }
 
-    &_right {
-        flex: 0 1 50%;
-        display: flex;
-
-    }
-
     &_logo {
         width: 10rem;
     }
 
     &_right {
+        flex: 0 1 50%;
         display: flex;
         align-items: center;
         justify-content: center;
