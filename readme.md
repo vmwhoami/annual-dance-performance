@@ -4,6 +4,7 @@
   
 > It's a real-world-like project, built with business specifications.
 > I try to follow the given design of the website, but personalise the content, built a website for a fictional concert event.
+> I try to follow the design as close as possible still giving it a personal flavour.
 > These are the assessment criteria:
 - Use semantic HTML tags.
 - Use CSS selectors correctly.
