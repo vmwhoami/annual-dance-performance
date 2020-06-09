@@ -152,8 +152,13 @@
 
     &_svg {
         padding: 3rem 0;
-        min-width: 50rem;
+        min-width: 40rem;
         fill: var(--orange);
         border: 2px solid var(--line);
+
+        @media screen and (max-width:22em) {
+            width: 30rem;
+
+        }
     }
 }
