@@ -1,7 +1,7 @@
 .navigation {
     display: none;
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:48em) {
         display: block;
     }
 
@@ -26,8 +26,7 @@
         cursor: pointer;
 
     }
-
-    // burger button
+// burger button
 
     &-icon {
         position: relative;

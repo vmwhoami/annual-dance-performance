@@ -2,20 +2,19 @@
   src: url(fonts/Cocogoose.ttf);
   font-family: "coco";
 }
-
 * {
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --dark: #272a31;
+  --dark: #272A31;
   --dark-light: #3e3e3e;
   --dark-site: #272a31;
-  --orange: #ec5242;
-  --light-gray: #d3d3d3;
-  --back: #f7f7f7;
-  --line: #e6e6e6;
+  --orange: #EC5242;
+  --light-gray: #D3D3D3;
+  --back: #F7F7F7;
+  --line: #E6E6E6;
 }
 
 *,
@@ -29,7 +28,6 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-
 @media screen and (max-width: 48em) {
   html {
     font-size: 55%;
@@ -50,7 +48,6 @@ p {
 .container {
   margin-top: 10rem;
 }
-
 @media screen and (max-width: 48em) {
   .container {
     margin-top: 0;
@@ -153,7 +150,6 @@ p {
   z-index: -1;
   position: relative;
 }
-
 .middle-shadow::after {
   z-index: 1;
   position: absolute;
@@ -176,68 +172,57 @@ p {
   width: 100%;
   display: flex;
   flex-flow: column;
-  box-shadow: 0 0.5rem 0.5rem #0002;
+  box-shadow: 0 0.5rem 0.5rem #00000022;
   z-index: 100;
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .navbar {
     display: none;
   }
 }
-
 .navbar_social {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .navbar_social_container {
   width: 120rem;
   display: flex;
   justify-content: flex-end;
 }
-
 .navbar_social_container > * {
   margin-right: 2rem;
 }
-
 .navbar_social_icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .navbar_social_svg {
   fill: white;
   width: 1.5rem;
   height: 1.5rem;
 }
-
 .navbar_social--link {
   color: white;
   padding: 0.5rem;
   text-decoration: none;
   text-transform: capitalize;
 }
-
 .navbar_nav {
   display: flex;
   height: 7rem;
   justify-content: center;
 }
-
 .navbar_nav_container {
   flex: 0 1 120rem;
   display: flex;
   justify-content: space-between;
 }
-
 .navbar_nav_logo {
   margin-left: 1rem;
   flex: 0 1 auto;
 }
-
 .navbar_nav_logo_a {
   display: flex;
   flex-direction: column;
@@ -248,13 +233,11 @@ p {
   font-family: "coco", Helvetica, sans-serif;
   line-height: 1.4;
 }
-
 .navbar_nav_svg {
   width: 5rem;
   height: 5rem;
   fill: var(--orange);
 }
-
 .navbar_nav_ul {
   height: 100%;
   flex: 0 1 50%;
@@ -262,7 +245,6 @@ p {
   display: flex;
   justify-content: flex-end;
 }
-
 .navbar_nav_li {
   height: 100%;
   align-self: center;
@@ -272,7 +254,6 @@ p {
   justify-content: center;
   align-items: center;
 }
-
 .navbar_nav_li::before {
   content: "";
   bottom: 0;
@@ -285,21 +266,17 @@ p {
   transition: transform 0.1s, height 0.1s 0.1s;
   z-index: 2;
 }
-
 .navbar_nav_li:hover::before {
   transform: scaleX(1);
   height: 100%;
   z-index: 2;
 }
-
 .navbar_nav_li:hover > a {
   color: white;
 }
-
 .navbar_nav_ul .navbar_nav_li:last-child {
   position: relative;
 }
-
 .navbar_nav_ul .navbar_nav_li:last-child::after {
   content: "";
   position: absolute;
@@ -307,10 +284,7 @@ p {
   height: 50%;
   outline: 0.5rem solid var(--orange);
 }
-
-.navbar_nav_a,
-.navbar_nav_a:link,
-.navbar_nav_a:visited {
+.navbar_nav_a, .navbar_nav_a:link, .navbar_nav_a:visited {
   height: 100%;
   padding: 0 2rem;
   top: 50%;
@@ -327,17 +301,14 @@ p {
 .navigation {
   display: none;
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .navigation {
     display: block;
   }
 }
-
 .navigation-checkbox {
   display: none;
 }
-
 .navigation-handle {
   position: fixed;
   width: 4rem;
@@ -354,14 +325,10 @@ p {
   align-items: center;
   cursor: pointer;
 }
-
 .navigation-icon {
   position: relative;
 }
-
-.navigation-icon,
-.navigation-icon::before,
-.navigation-icon::after {
+.navigation-icon, .navigation-icon::before, .navigation-icon::after {
   width: 2rem;
   height: 2px;
   background-color: grey;
@@ -369,31 +336,24 @@ p {
   position: absolute;
   transition: all 0.2s;
 }
-
-.navigation-icon::before,
-.navigation-icon::after {
+.navigation-icon::before, .navigation-icon::after {
   content: "";
   left: 0;
 }
-
 .navigation-icon::before {
   top: -0.8rem;
 }
-
 .navigation-icon::after {
   top: 0.8rem;
 }
-
 .navigation-handle:hover .navigation-icon::before {
   top: -1rem;
   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-
 .navigation-handle:hover .navigation-icon::after {
   top: 1rem;
   transition: all 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-
 .navigation-background {
   position: fixed;
   width: 2rem;
@@ -405,7 +365,6 @@ p {
   z-index: 100;
   transition: transform 0.8s cubic-bezier(0.09, 1.15, 0.97, 0.98);
 }
-
 .navigation-nav {
   position: fixed;
   top: 0;
@@ -416,7 +375,6 @@ p {
   opacity: 0;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .navigation-list {
   position: absolute;
   list-style: none;
@@ -424,13 +382,10 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .navigation-item {
   margin: 1rem;
 }
-
-.navigation-link:link,
-.navigation-link:visited {
+.navigation-link:link, .navigation-link:visited {
   display: inline-block;
   padding: 0.5rem 2rem;
   text-decoration: none;
@@ -442,31 +397,24 @@ p {
   background-size: 235%;
   transition: background-position 0.4s ease;
 }
-
-.navigation-link:hover,
-.navigation-link:active {
+.navigation-link:hover, .navigation-link:active {
   background-position: 100%;
   color: var(--dark);
 }
-
 .navigation-checkbox:checked ~ .navigation-background {
   transform: scale(150);
 }
-
 .navigation-checkbox:checked ~ .navigation-nav {
   width: 100%;
   opacity: 1;
 }
-
 .navigation-checkbox:checked + .navigation-handle .navigation-icon {
   background-color: transparent;
 }
-
 .navigation-checkbox:checked + .navigation-handle .navigation-icon::before {
   top: 0;
   transform: rotate(135deg);
 }
-
 .navigation-checkbox:checked + .navigation-handle .navigation-icon::after {
   top: 0;
   transform: rotate(-135deg);
@@ -478,13 +426,11 @@ p {
   position: relative;
   overflow: hidden;
 }
-
 @media screen and (max-width: 48em) {
   .header {
     top: 0;
   }
 }
-
 .header_bg {
   position: absolute;
   top: 0;
@@ -493,7 +439,6 @@ p {
   height: 100%;
   overflow: hidden;
 }
-
 .header_bg_video {
   position: absolute;
   top: 0;
@@ -504,16 +449,14 @@ p {
   opacity: 0.8;
   z-index: -1;
 }
-
 .header_container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(125deg, #fff0 0, #fff0 50%, var(--back) 50%, var(--back) 100%);
+  background: linear-gradient(125deg, #ffffff00 0, #ffffff00 50%, var(--back) 50%, var(--back) 100%);
 }
-
 .header_smallheading {
   position: absolute;
   top: 5rem;
@@ -522,18 +465,16 @@ p {
   font-weight: 600;
   color: var(--orange);
 }
-
 @media screen and (max-width: 48em) {
   .header_smallheading {
     margin-top: 3rem;
   }
 }
-
 .header_bigheading {
   position: absolute;
   left: 60%;
   top: 20%;
-  background-image: linear-gradient(to bottom, var(--orange), #ec524222), url(../img/concert_hall.jpg);
+  background-image: linear-gradient(to bottom, var(--orange), #EC524222), url(../img/concert_hall.jpg);
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
@@ -545,7 +486,6 @@ p {
   font-family: "coco", Helvetica, sans-serif;
   text-transform: uppercase;
 }
-
 @media screen and (max-width: 48em) {
   .header_bigheading {
     left: 40%;
@@ -555,7 +495,6 @@ p {
     font-size: 3rem;
   }
 }
-
 @media screen and (max-width: 26em) {
   .header_bigheading {
     top: 10%;
@@ -563,7 +502,6 @@ p {
     line-height: 1.1;
   }
 }
-
 .header_description {
   position: absolute;
   bottom: 10%;
@@ -575,21 +513,18 @@ p {
   background-color: var(--back);
   border: 0.5rem solid white;
 }
-
 @media screen and (max-width: 48em) {
   .header_description {
     padding: 2rem;
     width: 85%;
   }
 }
-
 @media screen and (max-width: 26em) {
   .header_description {
     bottom: 5%;
     width: 85%;
   }
 }
-
 .header_date {
   position: absolute;
   right: 10%;
@@ -598,13 +533,11 @@ p {
   color: var(--dark-light);
   font-weight: 900;
 }
-
 @media screen and (max-width: 48em) {
   .header_date {
     bottom: 40%;
   }
 }
-
 @media screen and (max-width: 26em) {
   .header_date {
     bottom: 40%;
@@ -620,7 +553,6 @@ p {
   justify-content: center;
   z-index: 10;
 }
-
 .program_container {
   flex: 0 1 120rem;
   text-align: center;
@@ -628,50 +560,42 @@ p {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .program_heading {
   color: var(--orange);
   text-transform: capitalize;
   font-size: 2rem;
 }
-
 .program_box_container {
   display: flex;
   flex-flow: row;
 }
-
 @media screen and (max-width: 48em) {
   .program_box_container {
     flex-direction: column;
   }
 }
-
 .program_box {
   flex: 1 1 25rem;
-  background-color: #fff1;
+  background-color: #ffffff11;
   margin: 1rem;
   transition: all 0.3s;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 @media screen and (max-width: 48em) {
   .program_box {
     flex-direction: row;
   }
-
   .program_box > * {
     flex: 1;
   }
 }
-
 .program_box:hover {
   background-color: #ffffff36;
   box-shadow: 0 0.5rem 2rem #fcfcfc22;
   outline: 3px solid #ffffffd8;
 }
-
 .program_box_link {
   align-self: center;
   flex: 0 0 auto;
@@ -680,7 +604,6 @@ p {
   text-transform: uppercase;
   position: relative;
 }
-
 .program_box_link::after {
   content: "";
   width: 100%;
@@ -690,12 +613,10 @@ p {
   border-width: 0 0 1px;
   border-style: solid;
 }
-
 .program_svg {
   width: 10rem;
   fill: white;
 }
-
 .program_text {
   color: white;
   padding: 1rem;
@@ -708,7 +629,6 @@ p {
   flex-direction: column;
   justify-content: center;
 }
-
 .featured-dances_grid {
   max-width: 120rem;
   align-self: center;
@@ -716,35 +636,29 @@ p {
   display: flex;
   flex-flow: row wrap;
 }
-
 @media screen and (max-width: 48em) {
   .featured-dances_grid {
     flex-direction: column;
   }
 }
-
 .featured-dances_dance {
   flex: 0 1 50%;
   padding: 1rem;
   display: flex;
 }
-
 .featured-dances_imgcont {
   flex: 0 0 40%;
 }
-
 .featured-dances_img {
   width: 100%;
   object-fit: cover;
 }
-
 .featured-dances_about {
   flex: 1 1 60%;
   display: flex;
   flex-direction: column;
   margin: 0 2rem;
 }
-
 @media screen and (max-width: 48em) {
   .featured-dances_about {
     margin: 0 0.5rem;
@@ -758,21 +672,18 @@ p {
   flex-direction: column;
   align-items: center;
 }
-
 .partners_container {
   flex: 1 1 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
-
 @media screen and (max-width: 48em) {
   .partners_container {
     flex-direction: column;
   }
 }
-
 .partners_box {
   margin: 1rem 0;
   display: flex;
@@ -784,21 +695,19 @@ p {
 .tickets {
   margin-top: 10rem;
   width: 100%;
-  background-color: #fffc;
+  background-color: #ffffffcc;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 @media screen and (max-width: 48em) {
   .tickets {
     margin-top: 0;
     min-height: 100vh;
   }
 }
-
 .tickets::after {
   content: "";
   position: absolute;
@@ -812,13 +721,11 @@ p {
   filter: grayscale(1);
   z-index: -1;
 }
-
 .tickets_table {
   z-index: 4;
   width: 50rem;
   background-color: white;
 }
-
 .tickets_table,
 .tickets_table th,
 .tickets_table td {
@@ -826,13 +733,11 @@ p {
   padding: 0;
   border: 2px solid var(--line);
 }
-
 @media screen and (max-width: 48em) {
   .tickets_table {
     width: 100%;
   }
 }
-
 .tickets_table-cont {
   border: 10px solid #fff;
   border-image-source: url(../img/bigpattern.png);
@@ -842,7 +747,6 @@ p {
   position: relative;
   z-index: 50;
 }
-
 .tickets_table-cont::after {
   position: absolute;
   content: "";
@@ -856,13 +760,11 @@ p {
   box-shadow: 0 4rem 5rem #000;
   z-index: -1;
 }
-
 @media screen and (max-width: 48em) {
   .tickets_table-cont::after {
     width: 31rem;
   }
 }
-
 .tickets_step {
   width: 100%;
   height: 20rem;
@@ -872,7 +774,6 @@ p {
   justify-content: center;
   position: relative;
 }
-
 .tickets_step::after {
   content: "";
   position: absolute;
@@ -883,7 +784,6 @@ p {
   transform: translateX(-50%) rotate(45deg);
   background-color: var(--orange);
 }
-
 .tickets_step::before {
   content: "v";
   color: white;
@@ -893,7 +793,6 @@ p {
   transform: translateX(-50%);
   z-index: 50;
 }
-
 .tickets_step_instr {
   flex: 0 1 60rem;
   align-self: center;
@@ -902,17 +801,15 @@ p {
   padding: 1rem 0;
   border-radius: 5rem;
 }
-
 .tickets_form {
   flex: 0 1 auto;
   background: #ffffffe5;
-  background: linear-gradient(125deg, #fffa 0, #fffa 10%, #fffd 10%, #fffd 90%, #ffffff8a 90%, #ffffff8a 100%);
-  border: 1rem solid #fff;
+  background: linear-gradient(125deg, #ffffffaa 0, #ffffffaa 10%, #ffffffdd 10%, #ffffffdd 90%, #ffffff8a 90%, #ffffff8a 100%);
+  border: 1rem solid #ffffff;
   display: flex;
   flex-direction: column;
   margin-bottom: 3rem;
 }
-
 .tickets_form::after {
   position: absolute;
   content: "";
@@ -926,7 +823,6 @@ p {
   box-shadow: 0 4rem 5rem #000;
   z-index: -1;
 }
-
 .tickets_inputs {
   width: 80%;
   align-self: center;
@@ -934,25 +830,21 @@ p {
   flex-direction: column;
   flex-wrap: nowrap;
 }
-
 .tickets_inpfield {
   padding: 1rem;
   border-radius: 0.5rem;
   border: none;
 }
-
 .tickets_radios {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 2rem;
 }
-
 .tickets_rows {
   display: flex;
   align-items: center;
 }
-
 .tickets_button {
   align-self: center;
   backface-visibility: hidden;
@@ -964,7 +856,6 @@ p {
   color: white;
   transition: all 0.3s;
 }
-
 .tickets_button:hover {
   background-color: var(--orange);
   transform: scale(1.1);
@@ -980,13 +871,11 @@ p {
   justify-content: center;
   border-bottom: 2px solid var(--line);
 }
-
 @media screen and (max-width: 48em) {
   .about {
     margin-top: 0;
   }
 }
-
 .about_container {
   flex: 0 1 120rem;
   display: flex;
@@ -994,7 +883,6 @@ p {
   align-items: center;
   justify-content: center;
 }
-
 .about_heading {
   margin: 2rem;
   font-size: 3rem;
@@ -1003,39 +891,34 @@ p {
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
-  background-image: linear-gradient(to bottom, var(--orange), #ec524222), url(../img/concert_hall.jpg);
+  background-image: linear-gradient(to bottom, var(--orange), #EC524222), url(../img/concert_hall.jpg);
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   max-width: 60%;
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .about_heading {
     max-width: 80%;
     margin-top: 10rem;
   }
 }
-
 .about_description {
   max-width: 80%;
   background-color: rgba(255, 255, 255, 0.438);
   border: 2px solid var(--line);
   padding: 1rem;
 }
-
 @media screen and (max-width: 48em) {
   .about_description {
     max-width: 90%;
   }
 }
-
 .about_img {
   float: left;
   margin: 1rem;
 }
-
 .about_link {
   margin-top: 2rem;
   max-width: 50%;
@@ -1043,7 +926,6 @@ p {
   flex-direction: column;
   text-align: center;
 }
-
 @media screen and (max-width: 48em) {
   .about_link {
     max-width: 90%;
@@ -1056,42 +938,36 @@ p {
   flex-flow: column;
   align-items: center;
 }
-
 .past_container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .past_container {
     flex-direction: column;
     height: auto;
   }
 }
-
 .past_video {
   flex: 0 1 60rem;
   padding: 3rem;
   display: flex;
   justify-content: center;
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .past_video {
     width: 100%;
     flex: 1 1 auto;
     padding: 1rem 0;
   }
 }
-
 .past_iframe {
   flex: 1 1 auto;
   min-height: 30rem;
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .past_iframe {
     flex: 1 1 auto;
     padding: 1rem;
@@ -1105,19 +981,16 @@ p {
   flex-direction: column;
   align-items: center;
 }
-
 .moreinfo_text {
   max-width: 100rem;
   text-align: center;
 }
-
 .moreinfo_logo {
   align-self: center;
   padding: 3rem 0;
   display: flex;
   justify-content: center;
 }
-
 .moreinfo_svg {
   padding: 3rem 0;
   min-width: 50rem;
@@ -1133,25 +1006,21 @@ p {
   align-items: center;
   align-content: center;
 }
-
 .footer_container {
   flex: 1 1 120rem;
   display: flex;
 }
-
 @media screen and (max-width: 48em) {
   .footer_container {
     flex-direction: column;
   }
 }
-
 .footer_left {
   flex: 0 1 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .footer_left_link {
   display: flex;
   justify-content: center;
@@ -1159,25 +1028,23 @@ p {
   text-decoration: none;
   font-size: 2rem;
 }
-
 .footer_left_copycontainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .footer_logo {
   width: 10rem;
 }
-
 .footer_right {
   flex: 0 1 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .footer_right_link {
   display: flex;
   align-items: center;
 }
+
+/*# sourceMappingURL=styles.css.map */
