@@ -6,7 +6,7 @@
   align-items: center;
 
   &_container {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,6 +19,7 @@
   }
 
   &_box {
+    flex: 1 1 25%;
     margin: 1rem 0;
     display: flex;
     flex-wrap: wrap;
