@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/SVG/vitaldance.svg" type="image/x-icon">
+    <title>Annual Concert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+
+
+    <!-- Nav ///////// section ////////// for mobile  -->
+    <div class="navigation logo">
+        <input type="checkbox" name="nav" id="nav" class="navigation-checkbox">
+        <label for="nav" class="navigation-handle">
+            <span class="navigation-icon">&nbsp;</span>
+        </label>
+        <div class="navigation-background">&nbsp;</div>
+        <div class="navigation-nav">
+            <ul class="navigation-list">
+                <li class="navigation-item"><a href="index.html" class="navigation-link uppercase"> Main </a></li>
+                <li class="navigation-item"><a href="about.html" class="navigation-link uppercase"> About </a></li>
+                <li class="navigation-item"><a href="index.html#program" class="navigation-link uppercase"> program</a>
+                </li>
+                <li class="navigation-item"><a href="index.html#sponsors" class="navigation-link uppercase">
+                        sponsors</a></li>
+                <li class="navigation-item"><a href="tickets.html" class="navigation-link uppercase">tickets</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Nav /////////////////////// section /////////////////// for desctop  -->
+
+    <nav class="navbar">
+        <div class="navbar_social gray-bg">
+            <div class="navbar_social_container">
+                <a class="navbar_social_icon" href="#">
+                    <svg class="navbar_social_svg">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a class="navbar_social_icon" href="#">
+                    <svg class="navbar_social_svg">
+                        <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+                <a class="navbar_social--link gray-text" href="#">English</a>
+                <a class="navbar_social--link gray-text" href="#">my page</a>
+                <a class="navbar_social--link gray-text" href="#">layout</a>
+            </div>
+        </div>
+        <!-- bottom  //////////////////  navbar  -->
+        <div class="navbar_nav">
+            <div class="navbar_nav_container">
+                <div class="navbar_nav_logo">
+                    <a class="navbar_nav_logo_a gray-text" href="index.html">
+                        <svg class="navbar_nav_svg">
+                            <use xlink:href="img/sprite.svg#icon-vitaldance"></use>
+                        </svg>
+                        vital-dance
+                    </a>
+                </div>
+                <ul class="navbar_nav_ul">
+                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="index.html">main</a></li>
+                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="about.html">about</a></li>
+                    <li class="navbar_nav_li"><a class="navbar_nav_a" href="index.html#program">program</a></li>
+                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="index.html#sponsors">sponsors</a></li>
+                    <li class="navbar_nav_li"> <a class="navbar_nav_a" href="tickets.html">tickets</a></li>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- buy tickets completion form  -->
+
+    <main class="tickets">
+        <h1 class="h-3 border gray-text my-1">Select your tickets</h1>
+
+
+        <div class="tickets_step">
+            <div class="tickets_step_instr">
+                <span class="gray-text uppercase"><span class="orange-text">Step 1.</span> Check the price</span>
+            </div>
+        </div>
+        <!-- ///////table///// -->
+        <div class="tickets_table-cont">
+            <table class="tickets_table">
+                <tr>
+                    <th class="coco orange-text">Rows</th>
+                    <th>First</th>
+                    <th>Middle</th>
+                    <th>Last</th>
+                    <th>Balcony</th>
+
+                </tr>
+                <tr>
+                    <td class="coco ">Price</td>
+                    <td>50$</td>
+                    <td>30$</td>
+                    <td>20$</td>
+                    <td>15$</td>
+                </tr>
+
+                <tr>
+                    <td class="coco ">Tax</td>
+                    <td>2$</td>
+                    <td>1.5$</td>
+                    <td>1$</td>
+                    <td>.50$</td>
+                </tr>
+                <tr>
+                    <td class="coco h-3">total</td>
+                    <td>52$</td>
+                    <td>31.5$</td>
+                    <td>21$</td>
+                    <td>15.50$</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="tickets_step">
+            <div class="tickets_step_instr">
+                <span class="gray-text uppercase"><span class="orange-text">Step 2.</span> Fill in the form</span>
+            </div>
+        </div>
+
+
+        <form class="tickets_form mx-1 my-1 " action="#">
+            <div class="tickets_inputs">
+                <label class=" uppercase gray-text brd_left my-1 coco " for="name">Name</label>
+                <input class="tickets_inpfield" type="text" placeholder="Name" id="name">
+                <label class=" uppercase gray-text brd_left my-1  coco" for="email">email</label>
+                <input class="tickets_inpfield" type="email" placeholder="Email" id="email">
+                <label class="uppercase gray-text brd_left my-1 coco" for="ticketnr">nr. of tickets</label>
+                <input class="tickets_inpfield" type="number" name="ticketnr" id="ticketnr"
+                    placeholder="Number of tickets">
+            </div>
+            <h3 class="h-3 border gray-text coco">Choose your sit</h3>
+            <div class="tickets_radios">
+                <div class="tichets_rows">
+                    <label class=" uppercase gray-text border mx-1  " for="front">
+                        front row
+                    </label>
+                    <input type="radio" name="radio" id="front">
+                </div>
+                <div class="tichets_rows">
+                    <label class=" uppercase gray-text border mx-1  " for="middle">
+                        Middle row
+                    </label>
+                    <input type="radio" name="radio" id="middle">
+                </div>
+                <div class="tichets_rows">
+                    <label class=" uppercase gray-text border mx-1  " for="back">
+                        Back row
+                    </label>
+                    <input type="radio" name="radio" id="back">
+                </div>
+                <div class="tichets_rows">
+                    <label class=" uppercase gray-text border mx-1  " for="balcony">
+                        balcony
+                    </label>
+                    <input type="radio" name="radio" id="balcony">
+                </div>
+
+            </div>
+
+            <!-- form/////////////////button -->
+            <button class="tickets_button uppercase my-1" type="submit">buy tickets</button>
+        </form>
+
+    </main>
+
+
+
+
+
+
+    <!-- foooter section -->
+    <footer class="footer gray-bg">
+        <div class="footer_container">
+            <div class="footer_left">
+                <a class="footer_left_link" href="#">
+                    <svg class="footer_logo fill-white">
+                        <use xlink:href="img/sprite.svg#icon-vmlogo"></use>
+                    </svg>
+                    <span class=" footer_left_copycontainer">
+                        <span class="footer_left_copyright white-text coco uppercase">&copy; vmwhoami limited </span>
+                        <span class="footer_left_copyright white-text coco uppercase"> some rights
+                            reserved</span>
+                    </span>
+                </a>
+            </div>
+            <div class="footer_right">
+                <a class="footer_right_link white-text nodeco uppercase" href="#">
+                    <svg class="footer_logo fill-white">
+                        <use xlink:href="img/sprite.svg#icon-cc"></use>
+                    </svg>
+
+                    <span class=" coco mx-1"> Cindy Shin</span>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

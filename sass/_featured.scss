@@ -1,0 +1,46 @@
+.featured-dances {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &_grid {
+        max-width: 120rem;
+        align-self: center;
+        flex: 0 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+
+        @media screen and (max-width:48em) {
+            flex-direction: column;
+        }
+    }
+
+    &_dance {
+        flex: 0 1 50%;
+        padding: 1rem;
+        display: flex;
+    }
+
+    &_imgcont {
+        flex: 0 0 40%;
+    }
+
+    &_img {
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    &_about {
+        flex: 1 1 60%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 2rem;
+
+        @media screen and (max-width:48em) {
+            margin: 0 .5rem;
+        }
+    }
+}

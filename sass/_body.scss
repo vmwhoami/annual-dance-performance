@@ -1,0 +1,176 @@
+@font-face {
+    src: url(fonts/Cocogoose.ttf);
+    font-family: "coco";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//Variables
+$coco:"coco",
+Helvetica,
+sans-serif;
+
+:root {
+    --dark: #272A31;
+    --dark-light: #3e3e3e;
+    --dark-site: #272a31;
+    --orange: #EC5242;
+    --light-gray: #D3D3D3;
+    --back: #F7F7F7;
+    --line: #E6E6E6;
+}
+
+//Sass Variables
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    @media screen and (max-width:48em) {
+        font-size: 55%;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+p {
+    text-indent: 2rem;
+}
+
+.container {
+    margin-top: 10rem;
+
+    @media screen and (max-width:48em) {
+        margin-top: 0;
+    }
+}
+
+////////Modifiers
+
+.coco {
+    font-family: $coco;
+}
+
+.nodeco {
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.my-0 {
+    margin: 0;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.h-3 {
+    align-self: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.white-text {
+    color: white;
+}
+
+.fill-white {
+    fill: white;
+}
+
+.fill-gray {
+    fill: var(--dark-light);
+}
+
+.gray-text {
+    color: var(--dark-light);
+}
+
+.orange-text {
+    color: var(--orange);
+}
+
+.gray-bg {
+    background-color: var(--dark-light);
+}
+
+.border {
+    position: relative;
+}
+
+.border::after {
+    content: '';
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -.5rem;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: var(--orange);
+}
+
+.brd_left {
+    position: relative;
+    display: inline-block;
+}
+
+.brd_left::after {
+    content: '';
+    width: 4rem;
+    position: absolute;
+    left: 2rem;
+    transform: translate(-50%, -50%);
+    bottom: -.5rem;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: var(--orange);
+}
+
+.middle-shadow {
+    z-index: -1;
+    position: relative;
+
+    &::after {
+        z-index: 1;
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        width: 50%;
+        top: 80%;
+        max-width: 10rem;
+        background: rgb(0, 0, 0);
+        box-shadow: 0 2rem 3rem rgb(0, 0, 0);
+        // transform: rotate(-90deg);
+    }
+}
